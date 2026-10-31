@@ -1,0 +1,2597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="過去問トラッカー" />
+  <title>小学校教員資格認定試験 過去問演習トラッカー</title>
+  <style>
+    *, ::before, ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e2e8f0;
+    }
+    html {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    h1, h2, h3, h4, p { margin: 0; }
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+    button, [type='button'], [type='submit'] {
+      cursor: pointer;
+      -webkit-appearance: button;
+    }
+    table { border-collapse: collapse; border-color: inherit; text-indent: 0; }
+    /* Layout & Display */
+    .hidden { display: none !important; }
+    .block { display: block; }
+    .flex { display: flex; }
+    .grid { display: grid; }
+    .flex-col { flex-direction: column; }
+    .flex-wrap { flex-wrap: wrap; }
+    .flex-1 { flex: 1 1 0%; }
+    .items-center { align-items: center; }
+    .items-baseline { align-items: baseline; }
+    .justify-between { justify-content: space-between; }
+    .justify-center { justify-content: center; }
+    .justify-end { justify-content: flex-end; }
+    .min-h-screen { min-height: 100vh; }
+    .w-full { width: 100%; }
+    .w-10 { width: 2.5rem; }
+    .w-8 { width: 2rem; }
+    .h-10 { height: 2.5rem; }
+    .h-8 { height: 2rem; }
+    .h-2\.5 { height: 0.625rem; }
+    .h-72 { height: 18rem; }
+    .h-full { height: 100%; }
+    .max-w-7xl { max-width: 80rem; }
+    .max-w-3xl { max-width: 48rem; }
+    .max-w-md { max-width: 28rem; }
+    .max-h-\[88vh\] { max-height: 88vh; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .mt-1 { margin-top: 0.25rem; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-3 { margin-top: 0.75rem; }
+    .mb-1 { margin-bottom: 0.25rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .pt-1 { padding-top: 0.25rem; }
+    .pt-2 { padding-top: 0.5rem; }
+    .pt-3 { padding-top: 0.75rem; }
+    .pb-3 { padding-bottom: 0.75rem; }
+    .pb-4 { padding-bottom: 1rem; }
+    .p-1 { padding: 0.25rem; }
+    .p-2 { padding: 0.5rem; }
+    .p-3 { padding: 0.75rem; }
+    .p-3\.5 { padding: 0.875rem; }
+    .p-4 { padding: 1rem; }
+    .p-5 { padding: 1.25rem; }
+    .px-1\.5 { padding-left: 0.375rem; padding-right: 0.375rem; }
+    .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+    .px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+    .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+    .px-3\.5 { padding-left: 0.875rem; padding-right: 0.875rem; }
+    .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+    .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+    .py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+    .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+    .py-2\.5 { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+    .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+    .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+    .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+    .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+    .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+    /* Positioning */
+    .sticky { position: sticky; }
+    .fixed { position: fixed; }
+    .relative { position: relative; }
+    .absolute { position: absolute; }
+    .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+    .top-0 { top: 0; }
+    .right-2 { right: 0.5rem; }
+    .right-4 { right: 1rem; }
+    .right-5 { right: 1.25rem; }
+    .bottom-5 { bottom: 1.25rem; }
+    .z-30 { z-index: 30; }
+    .z-50 { z-index: 50; }
+    /* Grid & Gap & Space */
+    .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+    .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .col-span-5 { grid-column: span 5 / span 5; }
+    .gap-1 { gap: 0.25rem; }
+    .gap-1\.5 { gap: 0.375rem; }
+    .gap-2 { gap: 0.5rem; }
+    .gap-2\.5 { gap: 0.625rem; }
+    .gap-3 { gap: 0.75rem; }
+    .gap-4 { gap: 1rem; }
+    .gap-6 { gap: 1.5rem; }
+    .space-y-0\.5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.125rem; }
+    .space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.25rem; }
+    .space-y-1\.5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.375rem; }
+    .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
+    .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
+    .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
+    .space-y-5 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.25rem; }
+    .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.5rem; }
+    .divide-y > :not([hidden]) ~ :not([hidden]) { border-top-width: 1px; }
+    .divide-slate-100 > :not([hidden]) ~ :not([hidden]) { border-color: #f1f5f9; }
+    /* Borders & Radius */
+    .border { border-width: 1px; }
+    .border-b { border-bottom-width: 1px; }
+    .border-t { border-top-width: 1px; }
+    .border-collapse { border-collapse: collapse; }
+    .border-slate-100 { border-color: #f1f5f9; }
+    .border-slate-200 { border-color: #e2e8f0; }
+    .border-slate-300 { border-color: #cbd5e1; }
+    .border-indigo-200 { border-color: #c7d2fe; }
+    .border-purple-200 { border-color: #e9d5ff; }
+    .border-purple-300 { border-color: #d8b4fe; }
+    .border-emerald-200 { border-color: #a7f3d0; }
+    .border-emerald-300 { border-color: #6ee7b7; }
+    .border-amber-300 { border-color: #fcd34d; }
+    .border-rose-200 { border-color: #fecdd3; }
+    .border-rose-300 { border-color: #fda4af; }
+    .rounded { border-radius: 0.25rem; }
+    .rounded-md { border-radius: 0.375rem; }
+    .rounded-lg { border-radius: 0.5rem; }
+    .rounded-xl { border-radius: 0.75rem; }
+    .rounded-2xl { border-radius: 1rem; }
+    .rounded-full { border-radius: 9999px; }
+    /* Backgrounds */
+    .bg-white { background-color: #ffffff; }
+    .bg-white\/95 { background-color: rgba(255, 255, 255, 0.95); }
+    .bg-slate-50 { background-color: #f8fafc; }
+    .bg-slate-50\/50 { background-color: rgba(248, 250, 252, 0.5); }
+    .bg-slate-50\/70 { background-color: rgba(248, 250, 252, 0.7); }
+    .bg-slate-100 { background-color: #f1f5f9; }
+    .bg-slate-200 { background-color: #e2e8f0; }
+    .bg-slate-900 { background-color: #0f172a; }
+    .bg-slate-900\/60 { background-color: rgba(15, 23, 42, 0.6); }
+    .bg-indigo-50 { background-color: #eef2ff; }
+    .bg-indigo-600 { background-color: #4f46e5; }
+    .bg-blue-50 { background-color: #eff6ff; }
+    .bg-blue-100 { background-color: #dbeafe; }
+    .bg-emerald-50 { background-color: #ecfdf5; }
+    .bg-emerald-50\/30 { background-color: rgba(236, 253, 245, 0.3); }
+    .bg-emerald-100 { background-color: #d1fae5; }
+    .bg-emerald-500 { background-color: #10b981; }
+    .bg-emerald-600 { background-color: #059669; }
+    .bg-amber-50\/30 { background-color: rgba(255, 251, 235, 0.3); }
+    .bg-amber-100 { background-color: #fef3c7; }
+    .bg-purple-50 { background-color: #faf5ff; }
+    .bg-purple-50\/30 { background-color: rgba(250, 245, 255, 0.3); }
+    .bg-purple-50\/60 { background-color: rgba(250, 245, 255, 0.6); }
+    .bg-purple-50\/70 { background-color: rgba(250, 245, 255, 0.7); }
+    .bg-rose-50 { background-color: #fff1f2; }
+    .bg-rose-50\/30 { background-color: rgba(255, 241, 242, 0.3); }
+    .bg-rose-50\/40 { background-color: rgba(255, 241, 242, 0.4); }
+    .bg-rose-100 { background-color: #ffe4e6; }
+    .bg-rose-500 { background-color: #f43f5e; }
+    .bg-rose-600 { background-color: #e11d48; }
+    /* Typography */
+    .text-\[10px\] { font-size: 10px; line-height: 1.4; }
+    .text-\[11px\] { font-size: 11px; line-height: 1.4; }
+    .text-xs { font-size: 0.75rem; line-height: 1rem; }
+    .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+    .text-base { font-size: 1rem; line-height: 1.5rem; }
+    .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+    .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+    .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+    .font-medium { font-weight: 500; }
+    .font-semibold { font-weight: 600; }
+    .font-bold { font-weight: 700; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .leading-tight { line-height: 1.25; }
+    .leading-relaxed { line-height: 1.625; }
+    .text-left { text-align: left; }
+    .text-center { text-align: center; }
+    .uppercase { text-transform: uppercase; }
+    .whitespace-pre-wrap { white-space: pre-wrap; }
+    .line-clamp-2 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+    /* Text Colors */
+    .text-white { color: #ffffff; }
+    .text-slate-400 { color: #94a3b8; }
+    .text-slate-500 { color: #64748b; }
+    .text-slate-600 { color: #475569; }
+    .text-slate-700 { color: #334155; }
+    .text-slate-800 { color: #1e293b; }
+    .text-slate-900 { color: #0f172a; }
+    .text-indigo-600 { color: #4f46e5; }
+    .text-indigo-700 { color: #4338ca; }
+    .text-blue-600 { color: #2563eb; }
+    .text-blue-700 { color: #1d4ed8; }
+    .text-emerald-600 { color: #059669; }
+    .text-emerald-700 { color: #047857; }
+    .text-emerald-800 { color: #065f46; }
+    .text-amber-700 { color: #b45309; }
+    .text-amber-800 { color: #92400e; }
+    .text-purple-600 { color: #9333ea; }
+    .text-purple-700 { color: #7e22ce; }
+    .text-purple-800 { color: #6b21a8; }
+    .text-purple-950 { color: #3b0764; }
+    .text-rose-500 { color: #f43f5e; }
+    .text-rose-600 { color: #e11d48; }
+    .text-rose-700 { color: #be123c; }
+    .text-rose-800 { color: #9f1239; }
+    /* Effects & Overflow & Misc */
+    .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+    .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); }
+    .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+    .backdrop-blur { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    .backdrop-blur-sm { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+    .overflow-hidden { overflow: hidden; }
+    .overflow-x-auto { overflow-x: auto; }
+    .overflow-y-auto { overflow-y: auto; }
+    .cursor-pointer { cursor: pointer; }
+    .transition { transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+    .transition-all { transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+    .duration-300 { transition-duration: 300ms; }
+    /* Hover & Focus States */
+    .hover\:bg-slate-50:hover { background-color: #f8fafc; }
+    .hover\:bg-slate-100:hover { background-color: #f1f5f9; }
+    .hover\:bg-slate-200:hover { background-color: #e2e8f0; }
+    .hover\:bg-indigo-100:hover { background-color: #e0e7ff; }
+    .hover\:bg-indigo-700:hover { background-color: #4338ca; }
+    .hover\:bg-emerald-100:hover { background-color: #d1fae5; }
+    .hover\:bg-emerald-700:hover { background-color: #047857; }
+    .hover\:bg-purple-100:hover { background-color: #f3e8ff; }
+    .hover\:bg-rose-100:hover { background-color: #ffe4e6; }
+    .hover\:border-indigo-200:hover { border-color: #c7d2fe; }
+    .hover\:text-slate-900:hover { color: #0f172a; }
+    .focus\:bg-white:focus { background-color: #ffffff; }
+    .focus\:outline-none:focus { outline: none; }
+    .focus\:ring-2:focus { box-shadow: 0 0 0 2px #6366f1; }
+    .focus\:ring-indigo-500:focus { box-shadow: 0 0 0 2px #6366f1; }
+    .focus\:ring-purple-500:focus { box-shadow: 0 0 0 2px #a855f7; }
+    /* Responsive Breakpoints */
+    @media (min-width: 640px) {
+      .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .sm\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+      .sm\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+      .sm\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+      .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .sm\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    }
+    @media (min-width: 768px) {
+      .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .md\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1024px) {
+      .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .lg\:col-span-2 { grid-column: span 2 / span 2; }
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      opacity: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+  
+    .app-header-safe { padding-top: env(safe-area-inset-top, 0px); }
+    [data-theme="dark"] body, [data-theme="dark"].bg-slate-50 { background-color: #0b1120 !important; color: #f1f5f9 !important; }
+    [data-theme="dark"] .bg-white, [data-theme="dark"] .bg-white\/95 { background-color: #1e293b !important; color: #f1f5f9 !important; border-color: #334155 !important; }
+    [data-theme="dark"] .bg-slate-50, [data-theme="dark"] .bg-slate-50\/50, [data-theme="dark"] .bg-slate-50\/70, [data-theme="dark"] .bg-slate-100 { background-color: #162032 !important; color: #cbd5e1 !important; border-color: #334155 !important; }
+    [data-theme="dark"] .text-slate-900, [data-theme="dark"] .text-slate-800, [data-theme="dark"] .text-slate-700 { color: #f1f5f9 !important; }
+    [data-theme="dark"] .text-slate-600, [data-theme="dark"] .text-slate-500 { color: #94a3b8 !important; }
+    [data-theme="dark"] .border-slate-200, [data-theme="dark"] .border-slate-300, [data-theme="dark"] .border-slate-100 { border-color: #334155 !important; }
+    [data-theme="dark"] input, [data-theme="dark"] select, [data-theme="dark"] textarea { background-color: #0f172a !important; color: #f1f5f9 !important; border-color: #475569 !important; }
+
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm app-header-safe">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+          小
+        </div>
+        <div>
+          <h1 class="text-base sm:text-lg font-bold text-slate-900 leading-tight">小学校教員資格認定試験 過去問演習トラッカー</h1>
+          
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (iPad Touch Friendly) -->
+      <nav class="flex items-center bg-slate-100 p-1 rounded-xl gap-1">
+        <button id="tabBtn-dashboard" type="button" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-indigo-600 shadow-sm">
+          📊 成績・グラフ
+        </button>
+        <button id="tabBtn-record" type="button" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900">
+          ✏️ 演習を記録
+        </button>
+        <button id="tabBtn-history" type="button" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900">
+          🤖 履歴・Gemini講評
+        </button>
+        <button id="tabBtn-data" type="button" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900">
+          💾 バックアップ
+        </button>
+      </nav>
+      <div class="flex items-center gap-1.5">
+        <button id="backToPortalBtn" type="button" class="px-2.5 py-2 rounded-lg text-xs font-bold border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 transition" title="マイページへ戻る">🏠</button>
+        <button id="toggleThemeBtn" type="button" class="px-2.5 py-2 rounded-lg text-xs font-bold border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 transition" title="ダークモード切替">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 space-y-6">
+
+    <!-- ================= VIEW 1: DASHBOARD & CHARTS ================= -->
+    <section id="view-dashboard" class="space-y-6">
+      <!-- Top Summary KPI Cards -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">総演習回数</span>
+            <span class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm font-bold">回</span>
+          </div>
+          <p id="kpi-total-count" class="mt-2 text-2xl sm:text-3xl font-bold text-slate-900">0回</p>
+          <p id="kpi-latest-date" class="mt-1 text-xs text-slate-500">最終実施: -</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">1次択一 合格判定率</span>
+            <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center text-sm font-bold">合</span>
+          </div>
+          <p id="kpi-pass-rate" class="mt-2 text-2xl sm:text-3xl font-bold text-emerald-600">0%</p>
+          <p id="kpi-pass-detail" class="mt-1 text-xs text-slate-500">科目Ⅰ(6割)・Ⅱ(計6割&各4割)</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">直近の択一総合得点</span>
+            <span class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-sm font-bold">点</span>
+          </div>
+          <p id="kpi-latest-score" class="mt-2 text-2xl sm:text-3xl font-bold text-slate-900">- / 400</p>
+          <p id="kpi-latest-badge" class="mt-1 text-xs font-medium text-slate-500">データなし</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">論述・2次 Gemini評価ログ</span>
+            <span class="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-sm font-bold">AI</span>
+          </div>
+          <p id="kpi-gemini-count" class="mt-2 text-2xl sm:text-3xl font-bold text-purple-600">0件</p>
+          <p id="kpi-essay-status" class="mt-1 text-xs text-slate-500">科目Ⅲ・Ⅳ・2次記録</p>
+        </div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Main Line Chart: Score % Trend Over Time -->
+        <div class="lg:col-span-2 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <div>
+              <h2 class="text-base font-bold text-slate-900">実施日別 得点率（％）推移グラフ</h2>
+              <p class="text-xs text-slate-500">赤破線＝合格基準ライン（60%）、橙点線＝科目Ⅱ各教科の最低基準（40%）</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <select id="chartFilterYear" class="text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="ALL">すべての年度</option>
+              </select>
+            </div>
+          </div>
+          <div class="relative h-72 w-full">
+            <canvas id="trendChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Bar Chart: Subject II 10 Subjects Average % -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col">
+          <div class="mb-4">
+            <h2 class="text-base font-bold text-slate-900">科目Ⅱ（専門教科）平均得点率</h2>
+            <p class="text-xs text-slate-500">50点満点換算（60%以上で安定圏、40%未満は足切り危険域）</p>
+          </div>
+          <div class="relative h-72 w-full">
+            <canvas id="subjectBarChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest Attempt Pass/Fail Breakdown Card -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">直近の演習結果・合格ライン判定</h2>
+            <p id="latest-summary-subtitle" class="text-xs text-slate-500"></p>
+          </div>
+          <button id="goToRecordBtn" type="button" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-semibold shadow-sm transition">
+            ＋ 新しい演習結果を記録する
+          </button>
+        </div>
+
+        <div id="latest-breakdown-container" class="grid grid-cols-1 md:grid-cols-5 gap-3">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIEW 2: RECORD FORM ================= -->
+    <section id="view-record" class="hidden space-y-6">
+      <form id="recordForm" class="space-y-6">
+        <input type="hidden" id="editingRecordId" value="" />
+
+        <!-- Basic Info & Live Overall Verdict Banner -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
+            <div>
+              <h2 id="formTitle" class="text-lg font-bold text-slate-900">新規の過去問演習を記録</h2>
+              
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span id="editingModeBadge" class="hidden px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-100 text-amber-800 border border-amber-300">
+                ✏️ 既存データの編集中（上書き保存されます）
+              </span>
+              <div id="liveOverallBadge" class="px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 border border-slate-200">
+                判定待ち（点数を入力してください）
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label for="examDate" class="block text-xs font-bold text-slate-700 mb-1">実施日 <span class="text-rose-500">*</span></label>
+              <input type="date" id="examDate" required class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+            <div>
+              <label for="examYear" class="block text-xs font-bold text-slate-700 mb-1">過去問の年度 <span class="text-rose-500">*</span></label>
+              <select id="examYear" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="令和8年度 (2026)">令和8年度 (2026)</option>
+                <option value="令和7年度 (2025)" selected>令和7年度 (2025)</option>
+                <option value="令和6年度 (2024)">令和6年度 (2024)</option>
+                <option value="令和5年度 (2023)">令和5年度 (2023)</option>
+                <option value="令和4年度 (2022)">令和4年度 (2022)</option>
+                <option value="令和3年度 (2021)">令和3年度 (2021)</option>
+                <option value="令和2年度 (2020)">令和2年度 (2020)</option>
+                <option value="令和元年度 (2019)">令和元年度 (2019)</option>
+                <option value="平成30年度以前">平成30年度以前</option>
+                <option value="予想問題・模試">予想問題・模試</option>
+              </select>
+            </div>
+            <div>
+              <label for="attemptLabel" class="block text-xs font-bold text-slate-700 mb-1">回数・メモラベル（任意）</label>
+              <input type="text" id="attemptLabel" placeholder="例: 1周目、時間制限あり など" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 1: 1次試験 択一式（科目Ⅰ・科目Ⅱ） -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- 科目Ⅰ Card -->
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 text-xs font-bold">第1次試験・択一式</span>
+                <span id="status-sub1" class="px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-500">未入力</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900">科目（Ⅰ）教職に関する科目</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                教育の基礎的理解、道徳・総合的な学習の時間の指導法、生徒指導等。<br/>
+                <strong class="text-slate-700">合格基準：100点満点中 60点（6割）以上</strong>
+              </p>
+              <div class="pt-2">
+                <label for="scoreSub1" class="block text-xs font-bold text-slate-700 mb-1">素点（0〜100点）</label>
+                <div class="relative flex items-center">
+                  <input type="number" id="scoreSub1" min="0" max="100" step="1" placeholder="例: 65" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-lg font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                  <span class="absolute right-4 text-sm font-semibold text-slate-400">/ 100点</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-3 border border-slate-100">
+              <div class="flex justify-between text-xs font-semibold text-slate-600 mb-1">
+                <span>得点率</span>
+                <span id="pctSub1">-%</span>
+              </div>
+              <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden">
+                <div id="barSub1" class="h-full bg-indigo-600 transition-all duration-300" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 科目Ⅱ Card (6 subjects out of 10) -->
+          <div class="lg:col-span-2 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 text-xs font-bold">第1次試験・択一式</span>
+                  <h3 class="text-base font-bold text-slate-900">科目（Ⅱ）小学校の各教科（10教科から6教科選択）</h3>
+                </div>
+                <p class="text-xs text-slate-500 mt-1">
+                  <strong class="text-slate-700">合格基準：選択6教科の合計180点/300点（6割）以上 かつ 各教科20点/50点（4割）以上</strong>
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span id="count-sub2" class="text-xs font-semibold text-slate-500">入力済: 0 / 6教科</span>
+                <span id="status-sub2" class="px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-500">未入力</span>
+              </div>
+            </div>
+
+            <!-- 10 Subjects Grid (50 pts each) -->
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3" id="sub2Grid">
+              <!-- Populated by JS: 国語, 社会, 算数, 理科, 生活, 音楽, 図画工作, 家庭, 体育, 外国語 -->
+            </div>
+
+            <!-- 科目Ⅱ Total Progress Bar -->
+            <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-100 flex flex-wrap items-center justify-between gap-4">
+              <div class="space-y-0.5">
+                <span class="text-xs font-semibold text-slate-500">選択教科 合計得点</span>
+                <div class="flex items-baseline gap-2">
+                  <span id="totalSub2" class="text-xl font-bold text-slate-900">0</span>
+                  <span id="maxSub2" class="text-xs font-semibold text-slate-500">/ 300点 (0%)</span>
+                </div>
+              </div>
+              <div id="sub2AlertText" class="text-xs font-semibold text-slate-500">
+                受験した教科の素点（各50点満点）を入力してください（空欄は未選択扱い）
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: 論述式（科目Ⅲ・科目Ⅳ）＆ 第2次試験 ＆ Gemini添削ログ -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 text-xs font-bold">論述式・第2次試験 ＆ Gemini自己採点</span>
+                <h3 class="text-base font-bold text-slate-900">科目（Ⅲ）・科目（Ⅳ）・第2次試験の記録とAI添削メモ</h3>
+              </div>
+
+            </div>
+            <button type="button" id="copyPromptBtn" class="px-3.5 py-2 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 text-xs font-bold transition flex items-center gap-1.5">
+              📋 Gemini採点依頼プロンプトをコピー
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- 科目Ⅲ（教科論述） -->
+            <div class="rounded-xl border border-slate-200 p-4 space-y-3 bg-slate-50/50">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-800">科目（Ⅲ）教科論述（1教科選択）</span>
+                <span id="status-sub3" class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-500">未入力</span>
+              </div>
+              <p class="text-xs text-slate-500">合格基準：満点の6割以上（100点満点換算で60点以上）</p>
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label for="sub3Subject" class="block text-xs font-semibold text-slate-600 mb-1">選択教科</label>
+                  <select id="sub3Subject" class="w-full rounded-lg border border-slate-300 px-2.5 py-2 text-xs bg-white">
+                    <option value="">未選択</option>
+                    <option value="国語">国語</option>
+                    <option value="社会">社会</option>
+                    <option value="算数">算数</option>
+                    <option value="理科">理科</option>
+                    <option value="生活">生活</option>
+                    <option value="音楽">音楽</option>
+                    <option value="図画工作">図画工作</option>
+                    <option value="家庭">家庭</option>
+                    <option value="体育">体育</option>
+                    <option value="外国語">外国語</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="scoreSub3" class="block text-xs font-semibold text-slate-600 mb-1">評価点 (0〜100)</label>
+                  <input type="number" id="scoreSub3" min="0" max="100" step="1" placeholder="例: 70" class="w-full rounded-lg border border-slate-300 px-2.5 py-2 text-xs font-bold bg-white" />
+                </div>
+              </div>
+            </div>
+
+            <!-- 科目Ⅳ（教職論述） -->
+            <div class="rounded-xl border border-slate-200 p-4 space-y-3 bg-slate-50/50">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-800">科目（Ⅳ）教職に関する論述</span>
+                <span id="status-sub4" class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-500">未入力</span>
+              </div>
+              <p class="text-xs text-slate-500">合格基準：A・Bの2段階評価とし、Aを合格とする</p>
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label for="gradeSub4" class="block text-xs font-semibold text-slate-600 mb-1">A/B判定</label>
+                  <select id="gradeSub4" class="w-full rounded-lg border border-slate-300 px-2.5 py-2 text-xs font-bold bg-white">
+                    <option value="">未実施</option>
+                    <option value="A">A（合格圏）</option>
+                    <option value="B">B（要改善）</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="scoreSub4" class="block text-xs font-semibold text-slate-600 mb-1">参考点数 (任意)</label>
+                  <input type="number" id="scoreSub4" min="0" max="100" step="1" placeholder="例: 75" class="w-full rounded-lg border border-slate-300 px-2.5 py-2 text-xs font-bold bg-white" />
+                </div>
+              </div>
+            </div>
+
+            <!-- 第2次試験（指導案・模擬授業・面接等） -->
+            <div class="rounded-xl border border-slate-200 p-4 space-y-3 bg-slate-50/50">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-800">第2次試験（実践課題・指導案等）</span>
+                <span id="status-stage2" class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-500">未入力</span>
+              </div>
+              <p class="text-xs text-slate-500">合格基準：複数課題を総合的にA・B評価し、Aを合格とする</p>
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <label for="gradeStage2" class="block text-xs font-semibold text-slate-600 mb-1">A/B判定</label>
+                  <select id="gradeStage2" class="w-full rounded-lg border border-slate-300 px-2.5 py-2 text-xs font-bold bg-white">
+                    <option value="">未実施</option>
+                    <option value="A">A（合格圏）</option>
+                    <option value="B">B（要改善）</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="scoreStage2" class="block text-xs font-semibold text-slate-600 mb-1">参考点数 (任意)</label>
+                  <input type="number" id="scoreStage2" min="0" max="100" step="1" placeholder="例: 80" class="w-full rounded-lg border border-slate-300 px-2.5 py-2 text-xs font-bold bg-white" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Textareas for Own Answer & Gemini Response -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-1">
+            <div>
+              <label for="userEssayText" class="block text-xs font-bold text-slate-700 mb-1">
+                📝 自分の論述解答・つまずいた問題のメモ（任意）
+              </label>
+              <textarea id="userEssayText" rows="5" placeholder="自分が書いた論述答案や、択一式で間違えた分野・メモを残しておけます..." class="w-full rounded-xl border border-slate-300 p-3 text-xs sm:text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+            </div>
+            <div>
+              <label for="geminiFeedbackText" class="block text-xs font-bold text-purple-800 mb-1">
+                🤖 Geminiからの返答・採点講評（貼り付けて保存）
+              </label>
+              <textarea id="geminiFeedbackText" rows="5" placeholder="別スレッドのGeminiから返ってきた採点結果・A/B判定の理由・改善アドバイス・模範解答例などをそのまま貼り付けて保存できます..." class="w-full rounded-xl border border-purple-300 bg-purple-50/30 p-3 text-xs sm:text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+          </div>
+
+          <!-- Optional Image Attachment (Auto-resized to max 800px JPEG 0.8) -->
+          <div class="rounded-xl border border-slate-200 p-3.5 bg-slate-50/50 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-bold text-slate-700">📷 答案・問題写真（最大3枚）</span>
+              <label for="essayImageInput" class="cursor-pointer px-3 py-1.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-xs font-bold text-slate-700 transition">
+                ＋ 写真を選択 / 撮影
+              </label>
+              <input type="file" id="essayImageInput" accept="image/*" multiple class="hidden" />
+            </div>
+            <div id="essayImagePreviewList" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="flex flex-wrap items-center justify-end gap-3">
+          <button type="button" id="cancelEditBtn" class="hidden px-5 py-3 rounded-xl border border-slate-300 bg-white text-slate-700 text-sm font-semibold hover:bg-slate-50 transition">
+            編集をキャンセル
+          </button>
+          <button type="button" id="resetFormBtn" class="px-5 py-3 rounded-xl border border-slate-300 bg-white text-slate-700 text-sm font-semibold hover:bg-slate-50 transition">
+            入力をクリア
+          </button>
+          <button type="submit" id="submitFormBtn" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold shadow-sm transition">
+            💾 この演習結果を保存する
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ================= VIEW 3: HISTORY & GEMINI LOGS ================= -->
+    <section id="view-history" class="hidden space-y-6">
+      <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">演習履歴一覧 ＆ Gemini添削返答の振り返り</h2>
+            
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <select id="historyFilterYear" class="text-xs border border-slate-300 rounded-lg px-3 py-2 bg-white text-slate-700 font-medium">
+              <option value="ALL">すべての年度</option>
+            </select>
+            <select id="historyFilterType" class="text-xs border border-slate-300 rounded-lg px-3 py-2 bg-white text-slate-700 font-medium">
+              <option value="ALL">すべての記録</option>
+              <option value="GEMINI">Gemini講評ありのみ</option>
+              <option value="PASS">総合合格のみ</option>
+              <option value="FAIL">不合格・要対策のみ</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="historyListContainer" class="space-y-3">
+          <!-- Dynamically populated cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIEW 4: BACKUP & DATA MANAGEMENT ================= -->
+    <section id="view-data" class="hidden space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+          <h2 class="text-base font-bold text-slate-900">📦 iPad・全環境対応 バックアップ書き出し・復元</h2>
+
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <button type="button" id="copyBackupTextBtn" class="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold shadow-sm transition">
+              📋 バックアップ文字列をコピー（確実・推奨）
+            </button>
+            <button type="button" id="exportBakedHtmlBtn" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-sm transition">🌐 データ組込済みの kakomon.html を保存</button>
+            <button type="button" id="exportJsonBtn" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-indigo-700 border border-indigo-200 text-xs sm:text-sm font-bold transition">
+              ⬇️ ファイル / 共有シートで保存 (.json)
+            </button>
+            <label for="importJsonInput" class="cursor-pointer px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 text-xs sm:text-sm font-bold transition">
+              ⬆️ ファイル(.json)から復元
+            </label>
+            <input type="file" id="importJsonInput" accept=".json,application/json" class="hidden" />
+          </div>
+
+          <!-- Text Backup Box (Works in any sandboxed preview environment) -->
+          <div class="pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between">
+              <label for="backupJsonTextarea" class="text-xs font-bold text-slate-700">
+                📝 テキストでバックアップ確認・貼り付けて復元
+              </label>
+              <button type="button" id="restoreFromTextBtn" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-sm transition">
+                📥 このテキストから復元する
+              </button>
+            </div>
+            <textarea id="backupJsonTextarea" rows="5" placeholder="ここにバックアップ用のJSONデータが表示されます。復元したい場合は、保存しておいたJSONテキストをここに貼り付けて「このテキストから復元する」を押してください。" class="w-full rounded-xl border border-slate-300 bg-slate-50 p-3 text-xs font-mono text-slate-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+          <h2 class="text-base font-bold text-slate-900">🛠️ サンプルデータ・初期化</h2>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button type="button" id="loadSampleBtn" class="px-4 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs sm:text-sm font-bold transition">
+              ✨ サンプル演習データを読み込む
+            </button>
+            <button type="button" id="clearAllDataBtn" class="px-4 py-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs sm:text-sm font-bold transition">
+              🗑️ 全データを削除する
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Official Exam Criteria Reference Card -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
+        <h3 class="text-sm font-bold text-slate-900">📌 小学校教員資格認定試験 合格判定基準（NITS公表基準）</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="border-b border-slate-200 text-slate-500 bg-slate-50">
+                <th class="py-2.5 px-3 font-bold">試験区分・科目</th>
+                <th class="py-2.5 px-3 font-bold">試験方式・配点目安</th>
+                <th class="py-2.5 px-3 font-bold">合格判定基準</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr>
+                <td class="py-2.5 px-3 font-semibold">第1次：教科及び教職に関する科目（Ⅰ）</td>
+                <td class="py-2.5 px-3">択一式（100点満点）</td>
+                <td class="py-2.5 px-3 font-semibold text-indigo-700">満点の6割（60点）以上</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold">第1次：教科及び教職に関する科目（Ⅱ）</td>
+                <td class="py-2.5 px-3">択一式・10教科から6教科選択（各50点・計300点満点）</td>
+                <td class="py-2.5 px-3 font-semibold text-indigo-700">6教科合計の6割（180点）以上 かつ 各教科4割（20点）以上</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold">第1次：教科及び教職に関する科目（Ⅲ）</td>
+                <td class="py-2.5 px-3">論述式・10教科から1教科選択（100点満点換算）</td>
+                <td class="py-2.5 px-3 font-semibold text-purple-700">満点の6割（60点）以上（※科目Ⅰ・Ⅱ合格者のみ採点）</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold">第1次：教科及び教職に関する科目（Ⅳ）</td>
+                <td class="py-2.5 px-3">論述式・教職に関する内容</td>
+                <td class="py-2.5 px-3 font-semibold text-purple-700">A・Bの2段階評価とし、Aを合格とする</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold">第2次試験</td>
+                <td class="py-2.5 px-3">複数課題（学習指導案・模擬授業・面接等）</td>
+                <td class="py-2.5 px-3 font-semibold text-purple-700">総合的にA・Bの2段階で評価し、Aを合格とする</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= MODAL: DETAIL & GEMINI FEEDBACK VIEWER ================= -->
+  <div id="detailModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[88vh] flex flex-col shadow-xl border border-slate-200 overflow-hidden">
+      <div class="px-5 py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+        <div>
+          <h3 id="modalTitle" class="text-base font-bold text-slate-900">演習詳細・Gemini講評</h3>
+          <p id="modalSubtitle" class="text-xs text-slate-500"></p>
+        </div>
+        <button type="button" id="closeModalBtn" class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-100 flex items-center justify-center font-bold">
+          ✕
+        </button>
+      </div>
+      <div id="modalBody" class="p-5 overflow-y-auto custom-scrollbar space-y-5 text-sm">
+        <!-- Populated dynamically -->
+      </div>
+      <div class="px-5 py-3 border-t border-slate-200 bg-slate-50 flex items-center justify-between">
+        <button type="button" id="modalDeleteBtn" class="px-3.5 py-2 rounded-xl bg-rose-50 text-rose-700 hover:bg-rose-100 text-xs font-bold transition">
+          🗑️ この記録を削除
+        </button>
+        <div class="flex items-center gap-2">
+          <button type="button" id="modalEditBtn" class="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 text-xs font-bold transition">
+            ✏️ 編集・追記する
+          </button>
+          <button type="button" id="modalCloseFooterBtn" class="px-4 py-2 rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 text-xs font-bold transition">
+            閉じる
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: CONFIRMATION ================= -->
+  <div id="confirmModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl border border-slate-200 space-y-4">
+      <h3 id="confirmTitle" class="text-base font-bold text-slate-900">確認</h3>
+      <p id="confirmMessage" class="text-xs sm:text-sm text-slate-600 leading-relaxed"></p>
+      <div class="flex justify-end gap-2 pt-2">
+        <button type="button" id="confirmCancelBtn" class="px-4 py-2 rounded-xl border border-slate-300 bg-white text-slate-700 text-xs font-bold">
+          キャンセル
+        </button>
+        <button type="button" id="confirmOkBtn" class="px-4 py-2 rounded-xl bg-rose-600 text-white text-xs font-bold">
+          実行する
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- ================= MODAL: IMAGE LIGHTBOX ================= -->
+  <div id="imageLightboxModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="relative max-w-3xl w-full flex flex-col items-center gap-3">
+      <img id="lightboxPreviewImg" src="" alt="拡大写真" class="rounded-2xl border border-slate-200 bg-white shadow-xl" style="max-height:82vh; max-width:100%; object-fit:contain;" />
+      <button type="button" id="closeLightboxModalBtn" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-lg">✕ 閉じる</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden px-4 py-3 rounded-xl bg-slate-900 text-white text-xs sm:text-sm font-semibold shadow-lg transition-all"></div>
+
+  <script>
+    /* =========================================================================
+     * Self-Contained Offline Canvas Chart Engine (Chart.js Compatible Subset)
+     * ========================================================================= */
+    class Chart {
+      constructor(ctx, config) {
+        this.ctx = ctx;
+        this.canvas = ctx.canvas;
+        this.config = config || {};
+        this._ro = null;
+        this._boundDraw = () => this.draw();
+        if (window.ResizeObserver && this.canvas.parentElement) {
+          this._ro = new ResizeObserver(this._boundDraw);
+          this._ro.observe(this.canvas.parentElement);
+        } else {
+          window.addEventListener('resize', this._boundDraw);
+        }
+        this.draw();
+      }
+      destroy() {
+        if (this._ro) {
+          this._ro.disconnect();
+          this._ro = null;
+        }
+        window.removeEventListener('resize', this._boundDraw);
+      }
+      draw() {
+        const parent = this.canvas.parentElement;
+        const width = (parent && parent.clientWidth) ? parent.clientWidth : 480;
+        const height = (parent && parent.clientHeight) ? parent.clientHeight : 288;
+        const dpr = window.devicePixelRatio || 1;
+        this.canvas.width = width * dpr;
+        this.canvas.height = height * dpr;
+        this.canvas.style.width = width + 'px';
+        this.canvas.style.height = height + 'px';
+
+        const ctx = this.ctx;
+        ctx.save();
+        ctx.scale(dpr, dpr);
+        ctx.clearRect(0, 0, width, height);
+
+        const type = this.config.type || 'line';
+        const data = this.config.data || { labels: [], datasets: [] };
+        const labels = data.labels || [];
+        const datasets = data.datasets || [];
+        const showLegend = !(this.config.options && this.config.options.plugins && this.config.options.plugins.legend && this.config.options.plugins.legend.display === false);
+
+        const padLeft = 42;
+        const padRight = 16;
+        const padTop = 16;
+        const legendHeight = showLegend ? 38 : 0;
+        const padBottom = 38 + legendHeight;
+        const plotW = Math.max(40, width - padLeft - padRight);
+        const plotH = Math.max(40, height - padTop - padBottom);
+
+        // Draw Y grid & ticks (0% to 100%)
+        ctx.font = '11px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'middle';
+        for (let v = 0; v <= 100; v += 20) {
+          const y = padTop + plotH - (v / 100) * plotH;
+          ctx.strokeStyle = '#e2e8f0';
+          ctx.lineWidth = 1;
+          ctx.setLineDash([]);
+          ctx.beginPath();
+          ctx.moveTo(padLeft, y);
+          ctx.lineTo(padLeft + plotW, y);
+          ctx.stroke();
+          ctx.fillStyle = '#64748b';
+          ctx.fillText(v + '%', padLeft - 6, y);
+        }
+
+        if (labels.length === 0) {
+          ctx.fillStyle = '#94a3b8';
+          ctx.textAlign = 'center';
+          ctx.font = '12px -apple-system, BlinkMacSystemFont, sans-serif';
+          ctx.fillText('データがありません', padLeft + plotW / 2, padTop + plotH / 2);
+          ctx.restore();
+          return;
+        }
+
+        if (type === 'bar') {
+          const ds = datasets[0] || { data: [] };
+          const vals = ds.data || [];
+          const colors = Array.isArray(ds.backgroundColor) ? ds.backgroundColor : labels.map(() => ds.backgroundColor || '#4f46e5');
+          const slotW = plotW / labels.length;
+          const barW = Math.min(28, Math.max(8, slotW * 0.62));
+
+          labels.forEach((lbl, i) => {
+            const val = Math.max(0, Math.min(100, Number(vals[i] || 0)));
+            const bh = (val / 100) * plotH;
+            const x = padLeft + i * slotW + (slotW - barW) / 2;
+            const y = padTop + plotH - bh;
+
+            ctx.fillStyle = colors[i] || '#4f46e5';
+            ctx.beginPath();
+            if (ctx.roundRect && bh > 0) {
+              ctx.roundRect(x, y, barW, bh, [4, 4, 0, 0]);
+            } else {
+              ctx.rect(x, y, barW, bh);
+            }
+            ctx.fill();
+
+            if (val > 0) {
+              ctx.fillStyle = '#334155';
+              ctx.font = 'bold 10px -apple-system, BlinkMacSystemFont, sans-serif';
+              ctx.textAlign = 'center';
+              ctx.fillText(val + '%', x + barW / 2, Math.max(10, y - 8));
+            }
+
+            ctx.fillStyle = '#475569';
+            ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText(String(lbl), padLeft + i * slotW + slotW / 2, padTop + plotH + 16);
+          });
+        } else {
+          // Line chart
+          const xForIndex = (i) => {
+            if (labels.length === 1) return padLeft + plotW / 2;
+            return padLeft + (i / (labels.length - 1)) * plotW;
+          };
+
+          // X labels
+          ctx.fillStyle = '#475569';
+          ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+          ctx.textAlign = 'center';
+          const step = Math.max(1, Math.ceil(labels.length / 7));
+          labels.forEach((lbl, i) => {
+            if (i % step === 0 || i === labels.length - 1) {
+              ctx.fillText(String(lbl), xForIndex(i), padTop + plotH + 16);
+            }
+          });
+
+          // Datasets
+          datasets.forEach((ds) => {
+            const pts = [];
+            (ds.data || []).forEach((v, i) => {
+              if (v !== null && v !== undefined && !isNaN(Number(v))) {
+                const clamped = Math.max(0, Math.min(100, Number(v)));
+                pts.push({ x: xForIndex(i), y: padTop + plotH - (clamped / 100) * plotH, val: clamped });
+              }
+            });
+            if (pts.length === 0) return;
+
+            ctx.save();
+            ctx.strokeStyle = ds.borderColor || '#4f46e5';
+            ctx.lineWidth = ds.borderWidth || 2;
+            ctx.setLineDash(ds.borderDash || []);
+            ctx.beginPath();
+            if (pts.length === 1 && (ds.borderDash || []).length > 0) {
+              ctx.moveTo(padLeft, pts[0].y);
+              ctx.lineTo(padLeft + plotW, pts[0].y);
+            } else {
+              pts.forEach((p, idx) => {
+                if (idx === 0) ctx.moveTo(p.x, p.y);
+                else ctx.lineTo(p.x, p.y);
+              });
+            }
+            ctx.stroke();
+            ctx.restore();
+
+            const r = ds.pointRadius !== undefined ? ds.pointRadius : 3.5;
+            if (r > 0) {
+              pts.forEach((p) => {
+                ctx.fillStyle = ds.backgroundColor || ds.borderColor || '#4f46e5';
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+                ctx.fill();
+              });
+            }
+          });
+
+          // Bottom Legend
+          if (showLegend) {
+            ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+            ctx.textAlign = 'left';
+            ctx.textBaseline = 'middle';
+            let curX = padLeft;
+            let curY = height - legendHeight + 14;
+            datasets.forEach((ds) => {
+              const lbl = ds.label || '';
+              const itemW = ctx.measureText(lbl).width + 24;
+              if (curX + itemW > width - padRight && curX > padLeft) {
+                curX = padLeft;
+                curY += 16;
+              }
+              ctx.fillStyle = ds.borderColor || '#4f46e5';
+              ctx.fillRect(curX, curY - 4, 12, 8);
+              ctx.fillStyle = '#475569';
+              ctx.fillText(lbl, curX + 16, curY);
+              curX += itemW;
+            });
+          }
+        }
+
+        ctx.restore();
+      }
+    }
+
+    const STORAGE_KEY = 'elem_teacher_exam_records_v1';
+    const IDB_NAME = 'ElemTeacherExamTrackerDB';
+    const IDB_VERSION = 1;
+    const IDB_STORE = 'records_store';
+    const IMG_MAX_DIM = 800;
+    const IMG_QUALITY = 0.8;
+    let idbPromise = null;
+    let currentFormImages = [];
+
+    function openTrackerDB() {
+      if (idbPromise) return idbPromise;
+      idbPromise = new Promise((resolve) => {
+        if (!window.indexedDB) {
+          resolve(null);
+          return;
+        }
+        try {
+          const req = window.indexedDB.open(IDB_NAME, IDB_VERSION);
+          req.onupgradeneeded = (e) => {
+            const db = e.target.result;
+            if (!db.objectStoreNames.contains(IDB_STORE)) {
+              db.createObjectStore(IDB_STORE, { keyPath: 'key' });
+            }
+          };
+          req.onsuccess = (e) => resolve(e.target.result);
+          req.onerror = () => resolve(null);
+        } catch (err) {
+          resolve(null);
+        }
+      });
+      return idbPromise;
+    }
+
+    function idbReadRecords() {
+      return openTrackerDB().then((db) => {
+        if (!db) return null;
+        return new Promise((resolve) => {
+          try {
+            const tx = db.transaction(IDB_STORE, 'readonly');
+            const req = tx.objectStore(IDB_STORE).get(STORAGE_KEY);
+            req.onsuccess = () => resolve(req.result ? req.result.value : null);
+            req.onerror = () => resolve(null);
+          } catch (e) {
+            resolve(null);
+          }
+        });
+      });
+    }
+
+    function idbWriteRecords(recs) {
+      return openTrackerDB().then((db) => {
+        if (!db) return;
+        return new Promise((resolve) => {
+          try {
+            const tx = db.transaction(IDB_STORE, 'readwrite');
+            tx.objectStore(IDB_STORE).put({ key: STORAGE_KEY, value: recs });
+            tx.oncomplete = () => resolve();
+            tx.onerror = () => resolve();
+          } catch (e) {
+            resolve();
+          }
+        });
+      });
+    }
+
+    function compressImageFile(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.onload = () => {
+            let w = img.width;
+            let h = img.height;
+            if (w > IMG_MAX_DIM || h > IMG_MAX_DIM) {
+              if (w >= h) {
+                h = Math.round((h * IMG_MAX_DIM) / w);
+                w = IMG_MAX_DIM;
+              } else {
+                w = Math.round((w * IMG_MAX_DIM) / h);
+                h = IMG_MAX_DIM;
+              }
+            }
+            const canvas = document.createElement('canvas');
+            canvas.width = w;
+            canvas.height = h;
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, w, h);
+            ctx.drawImage(img, 0, 0, w, h);
+            resolve(canvas.toDataURL('image/jpeg', IMG_QUALITY));
+          };
+          img.onerror = () => reject(new Error('Image load failed'));
+          img.src = e.target.result;
+        };
+        reader.onerror = () => reject(new Error('File read failed'));
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function renderEssayImagePreviews() {
+      const container = document.getElementById('essayImagePreviewList');
+      if (!container) return;
+      container.innerHTML = '';
+      currentFormImages.forEach((src, idx) => {
+        const wrap = document.createElement('div');
+        wrap.className = 'relative border border-slate-300 rounded-lg overflow-hidden bg-white';
+        wrap.style.width = '96px';
+        wrap.style.height = '72px';
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = '添付写真 ' + (idx + 1);
+        img.style.width = '100%';
+        img.style.height = '100%';
+        img.style.objectFit = 'cover';
+        const delBtn = document.createElement('button');
+        delBtn.type = 'button';
+        delBtn.textContent = '×';
+        delBtn.className = 'absolute top-0 right-2 px-1.5 py-0.5 rounded bg-slate-900 text-white text-xs font-bold';
+        delBtn.addEventListener('click', () => {
+          currentFormImages.splice(idx, 1);
+          renderEssayImagePreviews();
+        });
+        wrap.appendChild(img);
+        wrap.appendChild(delBtn);
+        container.appendChild(wrap);
+      });
+    }
+
+    const SUBJECT_II_LIST = [
+      { key: 'kokugo', label: '国語' },
+      { key: 'shakai', label: '社会' },
+      { key: 'sansu', label: '算数' },
+      { key: 'rika', label: '理科' },
+      { key: 'seikatsu', label: '生活' },
+      { key: 'ongaku', label: '音楽' },
+      { key: 'zukou', label: '図画工作' },
+      { key: 'katei', label: '家庭' },
+      { key: 'taiiku', label: '体育' },
+      { key: 'gaikokugo', label: '外国語' }
+    ];
+
+    const SAMPLE_RECORDS = [
+      {
+        id: 'sample-1',
+        examDate: '2026-09-20',
+        examYear: '令和5年度 (2023)',
+        attemptLabel: '1周目（通し演習）',
+        scoreSub1: 55,
+        sub2Scores: { kokugo: 32, shakai: 28, sansu: 35, rika: 18, seikatsu: 30, ongaku: null, zukou: null, katei: 26, taiiku: null, gaikokugo: null },
+        sub3Subject: '算数',
+        scoreSub3: 54,
+        gradeSub4: 'B',
+        scoreSub4: 55,
+        gradeStage2: '',
+        scoreStage2: null,
+        userEssayText: '【科目Ⅲ・算数】分数の除法の意味指導について、数直線モデルを使って記述したが、学習指導要領の文言との対応が曖昧だった。',
+        geminiFeedbackText: '【Gemini採点：科目Ⅲ 54/100点・科目Ⅳ B評価】\n・科目Ⅲ（算数）：数直線を用いた説明の方向性は良いですが、「単位分数のいくつ分」という視点と、除数が純分数のときに商が被除数より大きくなることへの児童のつまずきへの手立てが不足しています。ここを補うと65点以上に届きます。\n・科目Ⅳ（教職論述）：問題文の2つの問いのうち、後半の「組織的な対応」への言及が薄いためB判定としました。学年主任や養護教諭、SCとの連携を具体化しましょう。'
+      },
+      {
+        id: 'sample-2',
+        examDate: '2026-10-04',
+        examYear: '令和6年度 (2024)',
+        attemptLabel: '1周目',
+        scoreSub1: 65,
+        sub2Scores: { kokugo: 34, shakai: 30, sansu: 38, rika: 26, seikatsu: 32, ongaku: null, zukou: null, katei: 28, taiiku: null, gaikokugo: null },
+        sub3Subject: '算数',
+        scoreSub3: 68,
+        gradeSub4: 'A',
+        scoreSub4: 72,
+        gradeStage2: '',
+        scoreStage2: null,
+        userEssayText: '【科目Ⅲ・算数】児童の誤答例を挙げ、ペア対話と図表現の関連付けを明記。\n【科目Ⅳ】いじめの積極的認知と組織的対応（いじめ対策推進法第22条）を軸に構成。',
+        geminiFeedbackText: '【Gemini採点：科目Ⅲ 68/100点（合格圏）・科目Ⅳ A評価（合格圏）】\n・科目Ⅲ：学習指導要領の「数学的活動」の位置づけが明確で、児童のつまずきに対する具体的な発問が書けています。合格ライン（6割）を十分に超えています。\n・科目Ⅳ：法規の根拠と校内組織（いじめ防止対策推進委員会）の役割が的確に記述されており、説得力のあるA評価答案です。'
+      },
+      {
+        id: 'sample-3',
+        examDate: '2026-10-18',
+        examYear: '令和7年度 (2025)',
+        attemptLabel: '本番時間配分テスト',
+        scoreSub1: 72,
+        sub2Scores: { kokugo: 36, shakai: 32, sansu: 40, rika: 30, seikatsu: 34, ongaku: null, zukou: null, katei: 32, taiiku: null, gaikokugo: null },
+        sub3Subject: '理科',
+        scoreSub3: 75,
+        gradeSub4: 'A',
+        scoreSub4: 78,
+        gradeStage2: 'A',
+        scoreStage2: 80,
+        userEssayText: '【科目Ⅲ・理科】問題解決の過程（自然事象への働きかけ→問題の設定→予想や仮説→検証計画→考察）に沿って実験安全指導も含めて記述。\n【2次試験】模擬授業の学習指導案（小4理科「もののあたたまり方」）。',
+        geminiFeedbackText: '【Gemini採点：科目Ⅲ 75/100点・科目Ⅳ A評価・第2次 A評価】\n・科目Ⅲ（理科）：問題解決のステップと安全指導（アルコールランプ・実験器具の扱い）が具体的で非常に完成度が高いです。\n・第2次試験（指導案）：本時の目標・評価規準（知識・技能／思考・判断・表現／主体的に学習に取り組む態度）の整合性が取れており、A判定です。'
+      }
+    ];
+
+    /* __KAKOMON_DEFAULTS_START__ */
+    const DEFAULT_RECORDS = [];
+    /* __KAKOMON_DEFAULTS_END__ */
+    const THEME_KEY = 'elem_teacher_exam_theme_v1';
+
+    let records = [];
+    let trendChartInstance = null;
+    let subjectBarChartInstance = null;
+    let currentModalRecordId = null;
+    let editingStateId = null;
+    let pendingConfirmAction = null;
+
+    function applyTheme(theme) {
+      const isDark = theme === 'dark';
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+      }
+      const btn = document.getElementById('toggleThemeBtn');
+      if (btn) btn.textContent = isDark ? '☀️' : '🌙';
+      try { localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light'); } catch (e) {}
+    }
+
+    function initTheme() {
+      let saved = '';
+      try { saved = localStorage.getItem(THEME_KEY) || ''; } catch (e) {}
+      if (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        saved = 'dark';
+      }
+      applyTheme(saved === 'dark' ? 'dark' : 'light');
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.remove('hidden');
+      setTimeout(() => {
+        t.classList.add('hidden');
+      }, 3200);
+    }
+
+    function loadRecords() {
+      let loadedFromLocal = false;
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) {
+            records = parsed;
+            loadedFromLocal = true;
+          }
+        }
+      } catch (e) {}
+      if (!loadedFromLocal) {
+        records = JSON.parse(JSON.stringify(DEFAULT_RECORDS));
+      }
+
+      idbReadRecords().then((idbRecs) => {
+        if (Array.isArray(idbRecs)) {
+          records = idbRecs;
+          renderDashboard();
+          renderHistoryList();
+          refreshBackupTextarea();
+        } else if (loadedFromLocal || records.length > 0) {
+          idbWriteRecords(records);
+        }
+      });
+    }
+
+    function saveRecords() {
+      idbWriteRecords(records);
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
+      } catch (e) {}
+      refreshBackupTextarea();
+    }
+
+    // Evaluate a single record based on NITS official rules
+    function evaluateRecord(rec) {
+      // 科目Ⅰ: 100点満点中 60点以上
+      const hasSub1 = rec.scoreSub1 !== null && rec.scoreSub1 !== '' && !isNaN(Number(rec.scoreSub1));
+      const sub1Score = hasSub1 ? Number(rec.scoreSub1) : null;
+      const sub1Pass = hasSub1 ? sub1Score >= 60 : null;
+
+      // 科目Ⅱ: 選択教科（通常6教科、各50点満点）
+      // 合格基準: 合計60%以上 かつ 全選択教科が20点(40%)以上
+      const selectedSub2 = [];
+      let sub2CutoffFailed = [];
+      if (rec.sub2Scores) {
+        SUBJECT_II_LIST.forEach(s => {
+          const val = rec.sub2Scores[s.key];
+          if (val !== null && val !== undefined && val !== '' && !isNaN(Number(val))) {
+            const num = Number(val);
+            selectedSub2.push({ key: s.key, label: s.label, score: num });
+            if (num < 20) {
+              sub2CutoffFailed.push(s.label);
+            }
+          }
+        });
+      }
+      const hasSub2 = selectedSub2.length > 0;
+      const sub2Total = selectedSub2.reduce((acc, cur) => acc + cur.score, 0);
+      const sub2Max = selectedSub2.length * 50;
+      const sub2Pct = hasSub2 ? (sub2Total / sub2Max) * 100 : null;
+      const sub2Pass = hasSub2
+        ? (selectedSub2.length === 6 && sub2Total >= 180 && sub2CutoffFailed.length === 0)
+        : null;
+      const sub2PartialPass = hasSub2
+        ? (sub2Pct >= 60 && sub2CutoffFailed.length === 0)
+        : null;
+
+      // 科目Ⅲ: 100点満点中 60点以上
+      const hasSub3 = rec.scoreSub3 !== null && rec.scoreSub3 !== '' && !isNaN(Number(rec.scoreSub3));
+      const sub3Score = hasSub3 ? Number(rec.scoreSub3) : null;
+      const sub3Pass = hasSub3 ? sub3Score >= 60 : null;
+
+      // 科目Ⅳ: A/B評価 (Aが合格)
+      const hasSub4 = rec.gradeSub4 === 'A' || rec.gradeSub4 === 'B';
+      const sub4Pass = hasSub4 ? rec.gradeSub4 === 'A' : null;
+
+      // 第2次試験: A/B評価 (Aが合格)
+      const hasStage2 = rec.gradeStage2 === 'A' || rec.gradeStage2 === 'B';
+      const stage2Pass = hasStage2 ? rec.gradeStage2 === 'A' : null;
+
+      // Overall determination for practiced items
+      const practicedStatuses = [];
+      if (hasSub1) practicedStatuses.push(sub1Pass);
+      if (hasSub2) practicedStatuses.push(selectedSub2.length === 6 ? sub2Pass : sub2PartialPass);
+      if (hasSub3) practicedStatuses.push(sub3Pass);
+      if (hasSub4) practicedStatuses.push(sub4Pass);
+      if (hasStage2) practicedStatuses.push(stage2Pass);
+
+      const hasAny = practicedStatuses.length > 0;
+      const allPracticedPass = hasAny && practicedStatuses.every(Boolean);
+
+      // 1次択一 (科目Ⅰ + 科目Ⅱ 6教科) 総合
+      const multipleChoiceReady = hasSub1 && selectedSub2.length === 6;
+      const multipleChoicePass = multipleChoiceReady ? (sub1Pass && sub2Pass) : null;
+
+      return {
+        hasSub1, sub1Score, sub1Pass,
+        hasSub2, selectedSub2, sub2Total, sub2Max, sub2Pct, sub2Pass, sub2PartialPass, sub2CutoffFailed,
+        hasSub3, sub3Score, sub3Pass,
+        hasSub4, sub4Pass,
+        hasStage2, stage2Pass,
+        hasAny, allPracticedPass, multipleChoiceReady, multipleChoicePass
+      };
+    }
+
+    // Initialize Subject II input fields
+    function renderSub2Inputs() {
+      const container = document.getElementById('sub2Grid');
+      container.innerHTML = '';
+      SUBJECT_II_LIST.forEach(sub => {
+        const div = document.createElement('div');
+        div.className = 'p-3 rounded-xl border border-slate-200 bg-slate-50/70 space-y-1.5 transition-all';
+        div.id = `card-sub2-${sub.key}`;
+        div.innerHTML = `
+          <div class="flex items-center justify-between">
+            <label for="sub2-${sub.key}" class="text-xs font-bold text-slate-700">${sub.label}</label>
+            <span id="badge-sub2-${sub.key}" class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-600">未選択</span>
+          </div>
+          <div class="relative flex items-center">
+            <input type="number" id="sub2-${sub.key}" data-sub2-key="${sub.key}" min="0" max="50" step="1" placeholder="-"
+              class="sub2-input w-full rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <span class="absolute right-2 text-[11px] text-slate-400 font-medium">/50</span>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+
+      document.querySelectorAll('.sub2-input').forEach(inp => {
+        inp.addEventListener('input', updateLiveFormEvaluation);
+      });
+    }
+
+    function getFormRecordData() {
+      const sub2Scores = {};
+      SUBJECT_II_LIST.forEach(s => {
+        const val = document.getElementById(`sub2-${s.key}`).value.trim();
+        sub2Scores[s.key] = val === '' ? null : Number(val);
+      });
+
+      const s1 = document.getElementById('scoreSub1').value.trim();
+      const s3 = document.getElementById('scoreSub3').value.trim();
+      const s4 = document.getElementById('scoreSub4').value.trim();
+      const st2 = document.getElementById('scoreStage2').value.trim();
+
+      const domEditId = document.getElementById('editingRecordId').value.trim();
+      const activeId = editingStateId || domEditId || ('rec-' + Date.now());
+
+      return {
+        id: String(activeId),
+        examDate: document.getElementById('examDate').value,
+        examYear: document.getElementById('examYear').value,
+        attemptLabel: document.getElementById('attemptLabel').value.trim(),
+        scoreSub1: s1 === '' ? null : Number(s1),
+        sub2Scores,
+        sub3Subject: document.getElementById('sub3Subject').value,
+        scoreSub3: s3 === '' ? null : Number(s3),
+        gradeSub4: document.getElementById('gradeSub4').value,
+        scoreSub4: s4 === '' ? null : Number(s4),
+        gradeStage2: document.getElementById('gradeStage2').value,
+        scoreStage2: st2 === '' ? null : Number(st2),
+        userEssayText: document.getElementById('userEssayText').value.trim(),
+        geminiFeedbackText: document.getElementById('geminiFeedbackText').value.trim(),
+        essayImages: currentFormImages.slice()
+      };
+    }
+
+    function updateLiveFormEvaluation() {
+      const rec = getFormRecordData();
+      const ev = evaluateRecord(rec);
+
+      // 科目Ⅰ UI
+      const statusSub1 = document.getElementById('status-sub1');
+      const pctSub1 = document.getElementById('pctSub1');
+      const barSub1 = document.getElementById('barSub1');
+      if (ev.hasSub1) {
+        pctSub1.textContent = `${ev.sub1Score}%`;
+        barSub1.style.width = `${Math.min(100, Math.max(0, ev.sub1Score))}%`;
+        if (ev.sub1Pass) {
+          statusSub1.textContent = '合格圏 (60点以上)';
+          statusSub1.className = 'px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700';
+          barSub1.className = 'h-full bg-emerald-500 transition-all duration-300';
+        } else {
+          statusSub1.textContent = `不合格 (あと${60 - ev.sub1Score}点)`;
+          statusSub1.className = 'px-2.5 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-700';
+          barSub1.className = 'h-full bg-rose-500 transition-all duration-300';
+        }
+      } else {
+        statusSub1.textContent = '未入力';
+        statusSub1.className = 'px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-500';
+        pctSub1.textContent = '-%';
+        barSub1.style.width = '0%';
+      }
+
+      // 科目Ⅱ UI
+      SUBJECT_II_LIST.forEach(s => {
+        const val = rec.sub2Scores[s.key];
+        const badge = document.getElementById(`badge-sub2-${s.key}`);
+        const card = document.getElementById(`card-sub2-${s.key}`);
+        if (val !== null && !isNaN(val)) {
+          const pct = Math.round((val / 50) * 100);
+          if (val < 20) {
+            badge.textContent = `${pct}% (足切り)`;
+            badge.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded bg-rose-100 text-rose-700';
+            card.className = 'p-3 rounded-xl border border-rose-300 bg-rose-50/40 space-y-1.5 transition-all';
+          } else if (val >= 30) {
+            badge.textContent = `${pct}% (6割超)`;
+            badge.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700';
+            card.className = 'p-3 rounded-xl border border-emerald-300 bg-emerald-50/30 space-y-1.5 transition-all';
+          } else {
+            badge.textContent = `${pct}% (4割超)`;
+            badge.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800';
+            card.className = 'p-3 rounded-xl border border-amber-300 bg-amber-50/30 space-y-1.5 transition-all';
+          }
+        } else {
+          badge.textContent = '未選択';
+          badge.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-600';
+          card.className = 'p-3 rounded-xl border border-slate-200 bg-slate-50/70 space-y-1.5 transition-all';
+        }
+      });
+
+      const countSub2 = document.getElementById('count-sub2');
+      const statusSub2 = document.getElementById('status-sub2');
+      const totalSub2 = document.getElementById('totalSub2');
+      const maxSub2 = document.getElementById('maxSub2');
+      const sub2AlertText = document.getElementById('sub2AlertText');
+
+      countSub2.textContent = `入力済: ${ev.selectedSub2.length} / 6教科`;
+      totalSub2.textContent = ev.sub2Total;
+      maxSub2.textContent = `/ ${ev.sub2Max || 300}点 (${ev.hasSub2 ? Math.round(ev.sub2Pct) : 0}%)`;
+
+      if (!ev.hasSub2) {
+        statusSub2.textContent = '未入力';
+        statusSub2.className = 'px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-500';
+        sub2AlertText.textContent = '受験した教科の素点（各50点満点）を入力してください（空欄は未選択扱い）';
+        sub2AlertText.className = 'text-xs font-semibold text-slate-500';
+      } else {
+        if (ev.sub2CutoffFailed.length > 0) {
+          statusSub2.textContent = '不合格 (4割未満あり)';
+          statusSub2.className = 'px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-700';
+          sub2AlertText.textContent = `⚠️ ${ev.sub2CutoffFailed.join('・')} が最低基準（20点/4割）未満のため不合格判定です`;
+          sub2AlertText.className = 'text-xs font-bold text-rose-600';
+        } else if (ev.selectedSub2.length === 6) {
+          if (ev.sub2Total >= 180) {
+            statusSub2.textContent = '合格圏 (6割以上＆足切りなし)';
+            statusSub2.className = 'px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700';
+            sub2AlertText.textContent = `✅ 6教科合計 ${ev.sub2Total}/300点（${Math.round(ev.sub2Pct)}%）で合格基準クリア！`;
+            sub2AlertText.className = 'text-xs font-bold text-emerald-700';
+          } else {
+            statusSub2.textContent = `不合格 (合計あと${180 - ev.sub2Total}点)`;
+            statusSub2.className = 'px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-700';
+            sub2AlertText.textContent = `⚠️ 各教科4割以上はクリアしていますが、6教科合計180点まであと ${180 - ev.sub2Total}点 必要です`;
+            sub2AlertText.className = 'text-xs font-bold text-rose-600';
+          }
+        } else {
+          // Partial subjects entered
+          if (ev.sub2PartialPass) {
+            statusSub2.textContent = `暫定合格圏 (${ev.selectedSub2.length}教科・${Math.round(ev.sub2Pct)}%)`;
+            statusSub2.className = 'px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-700';
+            sub2AlertText.textContent = `ℹ️ 現在 ${ev.selectedSub2.length}教科入力中（本番は6教科選択）。得点率60%以上・足切りなしです。`;
+            sub2AlertText.className = 'text-xs font-semibold text-blue-700';
+          } else {
+            statusSub2.textContent = `暫定6割未満 (${ev.selectedSub2.length}教科・${Math.round(ev.sub2Pct)}%)`;
+            statusSub2.className = 'px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800';
+            sub2AlertText.textContent = `⚠️ 現在 ${ev.selectedSub2.length}教科入力中。合計得点率が60%を下回っています。`;
+            sub2AlertText.className = 'text-xs font-semibold text-amber-700';
+          }
+        }
+      }
+
+      // 科目Ⅲ UI
+      const statusSub3 = document.getElementById('status-sub3');
+      if (ev.hasSub3) {
+        statusSub3.textContent = ev.sub3Pass ? `合格圏 (${ev.sub3Score}点)` : `要改善 (${ev.sub3Score}点)`;
+        statusSub3.className = ev.sub3Pass
+          ? 'px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700'
+          : 'px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700';
+      } else {
+        statusSub3.textContent = '未入力';
+        statusSub3.className = 'px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-500';
+      }
+
+      // 科目Ⅳ UI
+      const statusSub4 = document.getElementById('status-sub4');
+      if (ev.hasSub4) {
+        statusSub4.textContent = ev.sub4Pass ? 'A判定 (合格)' : 'B判定 (不合格)';
+        statusSub4.className = ev.sub4Pass
+          ? 'px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700'
+          : 'px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700';
+      } else {
+        statusSub4.textContent = '未入力';
+        statusSub4.className = 'px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-500';
+      }
+
+      // 第2次 UI
+      const statusStage2 = document.getElementById('status-stage2');
+      if (ev.hasStage2) {
+        statusStage2.textContent = ev.stage2Pass ? 'A判定 (合格)' : 'B判定 (不合格)';
+        statusStage2.className = ev.stage2Pass
+          ? 'px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700'
+          : 'px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700';
+      } else {
+        statusStage2.textContent = '未入力';
+        statusStage2.className = 'px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-500';
+      }
+
+      // Live Overall Banner
+      const liveOverallBadge = document.getElementById('liveOverallBadge');
+      if (!ev.hasAny) {
+        liveOverallBadge.textContent = '判定待ち（点数を入力してください）';
+        liveOverallBadge.className = 'px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 border border-slate-200';
+      } else if (ev.allPracticedPass) {
+        liveOverallBadge.textContent = '🎉 総合判定：合格基準クリア！（入力した全科目で合格ライン達成）';
+        liveOverallBadge.className = 'px-4 py-2 rounded-xl text-sm font-bold bg-emerald-100 text-emerald-800 border border-emerald-300';
+      } else {
+        liveOverallBadge.textContent = '⚠️ 総合判定：不合格科目あり（基準未達の科目を確認してください）';
+        liveOverallBadge.className = 'px-4 py-2 rounded-xl text-sm font-bold bg-rose-100 text-rose-800 border border-rose-300';
+      }
+    }
+
+    // Populate Year Filter Select Options
+    function updateYearFilterDropdowns() {
+      const years = Array.from(new Set(records.map(r => r.examYear).filter(Boolean)));
+      ['chartFilterYear', 'historyFilterYear'].forEach(id => {
+        const sel = document.getElementById(id);
+        const current = sel.value;
+        sel.innerHTML = '<option value="ALL">すべての年度</option>';
+        years.forEach(y => {
+          const opt = document.createElement('option');
+          opt.value = y;
+          opt.textContent = y;
+          sel.appendChild(opt);
+        });
+        if (years.includes(current)) sel.value = current;
+      });
+    }
+
+    // Render Dashboard KPIs, Charts, and Latest Breakdown
+    function renderDashboard() {
+      updateYearFilterDropdowns();
+
+      const sorted = [...records].sort((a, b) => (a.examDate || '').localeCompare(b.examDate || ''));
+      document.getElementById('kpi-total-count').textContent = `${sorted.length}回`;
+
+      if (sorted.length === 0) {
+        document.getElementById('kpi-latest-date').textContent = '最終実施: -';
+        document.getElementById('kpi-pass-rate').textContent = '0%';
+        document.getElementById('kpi-latest-score').textContent = '- / 400';
+        document.getElementById('kpi-latest-badge').textContent = 'データなし';
+        document.getElementById('kpi-gemini-count').textContent = '0件';
+        document.getElementById('latest-breakdown-container').innerHTML = `
+          <div class="col-span-5 text-center py-8 text-slate-400 text-sm">
+            まだ演習記録がありません。「＋ 新しい演習結果を記録する」から最初の過去問結果を入力してみましょう！
+          </div>
+        `;
+        renderCharts([]);
+        return;
+      }
+
+      const latest = sorted[sorted.length - 1];
+      const latestEv = evaluateRecord(latest);
+      document.getElementById('kpi-latest-date').textContent = `最終実施: ${latest.examDate} (${latest.examYear})`;
+
+      // Pass rate among records that have at least Sub1 or Sub2
+      const evaluatedRecs = sorted.map(r => evaluateRecord(r)).filter(e => e.hasAny);
+      const passCount = evaluatedRecs.filter(e => e.allPracticedPass).length;
+      const passRate = evaluatedRecs.length ? Math.round((passCount / evaluatedRecs.length) * 100) : 0;
+      document.getElementById('kpi-pass-rate').textContent = `${passRate}%`;
+      document.getElementById('kpi-pass-detail').textContent = `全${evaluatedRecs.length}回中 ${passCount}回 合格基準達成`;
+
+      // Latest Score (Sub1 + Sub2)
+      if (latestEv.hasSub1 || latestEv.hasSub2) {
+        const total = (latestEv.sub1Score || 0) + (latestEv.sub2Total || 0);
+        const max = (latestEv.hasSub1 ? 100 : 0) + (latestEv.sub2Max || 0);
+        document.getElementById('kpi-latest-score').textContent = `${total} / ${max}点`;
+        document.getElementById('kpi-latest-badge').textContent = latestEv.allPracticedPass
+          ? '✅ 直近演習：合格圏内'
+          : '⚠️ 直近演習：基準未達あり';
+        document.getElementById('kpi-latest-badge').className = latestEv.allPracticedPass
+          ? 'mt-1 text-xs font-bold text-emerald-600'
+          : 'mt-1 text-xs font-bold text-rose-600';
+      } else {
+        document.getElementById('kpi-latest-score').textContent = '論述・2次のみ';
+        document.getElementById('kpi-latest-badge').textContent = latestEv.allPracticedPass ? '✅ A/合格評価' : '⚠️ 要改善';
+      }
+
+      const geminiCount = sorted.filter(r => r.geminiFeedbackText && r.geminiFeedbackText.length > 0).length;
+      document.getElementById('kpi-gemini-count').textContent = `${geminiCount}件`;
+
+      // Latest Attempt Breakdown Cards
+      document.getElementById('latest-summary-subtitle').textContent =
+        `${latest.examDate} 実施 ／ ${latest.examYear} ${latest.attemptLabel ? '（' + latest.attemptLabel + '）' : ''}`;
+
+      const cardsHtml = [
+        {
+          title: '科目（Ⅰ）教職択一',
+          value: latestEv.hasSub1 ? `${latestEv.sub1Score} / 100点` : '未実施',
+          sub: '合格ライン: 60点以上',
+          pass: latestEv.sub1Pass
+        },
+        {
+          title: '科目（Ⅱ）6教科択一',
+          value: latestEv.hasSub2 ? `${latestEv.sub2Total} / ${latestEv.sub2Max}点` : '未実施',
+          sub: latestEv.sub2CutoffFailed.length > 0
+            ? `足切り: ${latestEv.sub2CutoffFailed.join('・')}`
+            : '合格ライン: 計6割&各4割以上',
+          pass: latestEv.selectedSub2.length === 6 ? latestEv.sub2Pass : latestEv.sub2PartialPass
+        },
+        {
+          title: `科目（Ⅲ）教科論述${latest.sub3Subject ? '(' + latest.sub3Subject + ')' : ''}`,
+          value: latestEv.hasSub3 ? `${latestEv.sub3Score} / 100点` : '未実施',
+          sub: '合格ライン: 60点以上',
+          pass: latestEv.sub3Pass
+        },
+        {
+          title: '科目（Ⅳ）教職論述',
+          value: latestEv.hasSub4 ? `${latest.gradeSub4}判定${latest.scoreSub4 ? ' (' + latest.scoreSub4 + '点)' : ''}` : '未実施',
+          sub: '合格ライン: A評価',
+          pass: latestEv.sub4Pass
+        },
+        {
+          title: '第2次試験 総合',
+          value: latestEv.hasStage2 ? `${latest.gradeStage2}判定${latest.scoreStage2 ? ' (' + latest.scoreStage2 + '点)' : ''}` : '未実施',
+          sub: '合格ライン: A評価',
+          pass: latestEv.stage2Pass
+        }
+      ].map(item => {
+        const badge = item.pass === null
+          ? '<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-500">未実施</span>'
+          : item.pass
+            ? '<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-100 text-emerald-700">合格圏</span>'
+            : '<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-rose-100 text-rose-700">不合格</span>';
+        return `
+          <div class="p-3.5 rounded-xl border ${item.pass === false ? 'border-rose-200 bg-rose-50/30' : item.pass === true ? 'border-emerald-200 bg-emerald-50/30' : 'border-slate-200 bg-slate-50/50'} space-y-1">
+            <div class="flex items-center justify-between gap-1">
+              <span class="text-xs font-bold text-slate-700">${item.title}</span>
+              ${badge}
+            </div>
+            <p class="text-lg font-bold text-slate-900">${item.value}</p>
+            <p class="text-[11px] text-slate-500">${item.sub}</p>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('latest-breakdown-container').innerHTML = cardsHtml;
+
+      const selectedYear = document.getElementById('chartFilterYear').value;
+      const filteredForChart = selectedYear === 'ALL'
+        ? sorted
+        : sorted.filter(r => r.examYear === selectedYear);
+
+      renderCharts(filteredForChart);
+    }
+
+    function renderCharts(filteredRecords) {
+      const ctxTrend = document.getElementById('trendChart').getContext('2d');
+      if (trendChartInstance) {
+        trendChartInstance.destroy();
+      }
+
+      const labels = filteredRecords.map(r => `${r.examDate.slice(5)} (${r.examYear.replace(/ \(.*\)/, '')})`);
+      const dataSub1 = filteredRecords.map(r => {
+        const ev = evaluateRecord(r);
+        return ev.hasSub1 ? ev.sub1Score : null;
+      });
+      const dataSub2 = filteredRecords.map(r => {
+        const ev = evaluateRecord(r);
+        return ev.hasSub2 ? Math.round(ev.sub2Pct * 10) / 10 : null;
+      });
+      const dataSub3 = filteredRecords.map(r => {
+        const ev = evaluateRecord(r);
+        return ev.hasSub3 ? ev.sub3Score : null;
+      });
+
+      const passLine60 = filteredRecords.map(() => 60);
+      const cutoffLine40 = filteredRecords.map(() => 40);
+
+      trendChartInstance = new Chart(ctxTrend, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: '科目Ⅰ 教職択一 (%)',
+              data: dataSub1,
+              borderColor: '#4f46e5',
+              backgroundColor: '#4f46e5',
+              borderWidth: 2.5,
+              tension: 0.25,
+              spanGaps: true,
+              pointRadius: 4
+            },
+            {
+              label: '科目Ⅱ 6教科合計 (%)',
+              data: dataSub2,
+              borderColor: '#0ea5e9',
+              backgroundColor: '#0ea5e9',
+              borderWidth: 2.5,
+              tension: 0.25,
+              spanGaps: true,
+              pointRadius: 4
+            },
+            {
+              label: '科目Ⅲ 教科論述 (%)',
+              data: dataSub3,
+              borderColor: '#9333ea',
+              backgroundColor: '#9333ea',
+              borderWidth: 2,
+              tension: 0.25,
+              spanGaps: true,
+              pointRadius: 4
+            },
+            {
+              label: '合格基準ライン (60%)',
+              data: passLine60,
+              borderColor: '#e11d48',
+              borderWidth: 1.5,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            },
+            {
+              label: '科目Ⅱ 足切りライン (40%)',
+              data: cutoffLine40,
+              borderColor: '#f59e0b',
+              borderWidth: 1.5,
+              borderDash: [3, 3],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          scales: {
+            y: {
+              min: 0,
+              max: 100,
+              ticks: { callback: v => v + '%' }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { boxWidth: 12, font: { size: 11 } }
+            }
+          }
+        }
+      });
+
+      // Subject II 10 subjects average % bar chart
+      const ctxBar = document.getElementById('subjectBarChart').getContext('2d');
+      if (subjectBarChartInstance) {
+        subjectBarChartInstance.destroy();
+      }
+
+      const subAverages = SUBJECT_II_LIST.map(s => {
+        const vals = filteredRecords
+          .map(r => (r.sub2Scores && r.sub2Scores[s.key] !== null && r.sub2Scores[s.key] !== undefined && r.sub2Scores[s.key] !== '') ? Number(r.sub2Scores[s.key]) : null)
+          .filter(v => v !== null && !isNaN(v));
+        if (vals.length === 0) return 0;
+        const avgScore = vals.reduce((a, b) => a + b, 0) / vals.length;
+        return Math.round((avgScore / 50) * 100);
+      });
+
+      const barColors = subAverages.map(pct => {
+        if (pct === 0) return '#cbd5e1';
+        if (pct < 40) return '#f43f5e';
+        if (pct >= 60) return '#10b981';
+        return '#f59e0b';
+      });
+
+      subjectBarChartInstance = new Chart(ctxBar, {
+        type: 'bar',
+        data: {
+          labels: SUBJECT_II_LIST.map(s => s.label),
+          datasets: [
+            {
+              label: '平均得点率 (%)',
+              data: subAverages,
+              backgroundColor: barColors,
+              borderRadius: 6
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              min: 0,
+              max: 100,
+              ticks: { callback: v => v + '%' }
+            }
+          },
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
+    }
+
+    // Render History List
+    function renderHistoryList() {
+      const yearFilter = document.getElementById('historyFilterYear').value;
+      const typeFilter = document.getElementById('historyFilterType').value;
+      const container = document.getElementById('historyListContainer');
+
+      const sorted = [...records].sort((a, b) => (b.examDate || '').localeCompare(a.examDate || ''));
+      const filtered = sorted.filter(rec => {
+        if (yearFilter !== 'ALL' && rec.examYear !== yearFilter) return false;
+        const ev = evaluateRecord(rec);
+        if (typeFilter === 'GEMINI' && !rec.geminiFeedbackText) return false;
+        if (typeFilter === 'PASS' && !ev.allPracticedPass) return false;
+        if (typeFilter === 'FAIL' && ev.allPracticedPass) return false;
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-10 text-slate-400 text-sm">
+            条件に一致する演習記録がありません。
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(rec => {
+        const ev = evaluateRecord(rec);
+        const overallBadge = ev.allPracticedPass
+          ? '<span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">✅ 合格基準クリア</span>'
+          : '<span class="px-2.5 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-800">⚠️ 基準未達あり</span>';
+
+        const sub2Summary = ev.hasSub2
+          ? `${ev.sub2Total}/${ev.sub2Max}点 (${Math.round(ev.sub2Pct)}%)`
+          : '未実施';
+
+        const geminiPreview = rec.geminiFeedbackText
+          ? `<div class="mt-3 p-3 rounded-xl bg-purple-50/70 border border-purple-200 text-xs text-purple-950 line-clamp-2">
+               <span class="font-bold text-purple-700">🤖 Gemini講評：</span>${escapeHtml(rec.geminiFeedbackText)}
+             </div>`
+          : '';
+
+        return `
+          <div class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-indigo-200 transition shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-sm font-bold text-slate-900">${escapeHtml(rec.examDate)}</span>
+                <span class="px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 text-xs font-bold">${escapeHtml(rec.examYear)}</span>
+                ${rec.attemptLabel ? `<span class="text-xs text-slate-500 font-medium">${escapeHtml(rec.attemptLabel)}</span>` : ''}
+                ${overallBadge}
+              </div>
+              <div class="flex items-center gap-2">
+                <button type="button" data-view-id="${rec.id}" class="view-detail-btn px-3 py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold transition">
+                  🔍 詳細・講評
+                </button>
+                <button type="button" data-edit-id="${rec.id}" class="edit-record-btn px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition">
+                  ✏️ 編集
+                </button>
+                <button type="button" data-delete-id="${rec.id}" class="delete-record-btn px-3 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-semibold transition">
+                  🗑️ 削除
+                </button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-3 text-xs">
+              <div class="p-2 rounded-lg bg-slate-50">
+                <span class="text-slate-500 block">科目Ⅰ(教職択一)</span>
+                <span class="font-bold ${ev.sub1Pass === false ? 'text-rose-600' : 'text-slate-800'}">${ev.hasSub1 ? ev.sub1Score + '/100点' : '未実施'}</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-50">
+                <span class="text-slate-500 block">科目Ⅱ(6教科計)</span>
+                <span class="font-bold ${(ev.sub2Pass === false || ev.sub2PartialPass === false) ? 'text-rose-600' : 'text-slate-800'}">${sub2Summary}</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-50">
+                <span class="text-slate-500 block">科目Ⅲ(教科論述)</span>
+                <span class="font-bold ${ev.sub3Pass === false ? 'text-rose-600' : 'text-slate-800'}">${ev.hasSub3 ? ev.sub3Score + '点 (' + (rec.sub3Subject || '教科') + ')' : '未実施'}</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-50">
+                <span class="text-slate-500 block">科目Ⅳ(教職論述)</span>
+                <span class="font-bold ${ev.sub4Pass === false ? 'text-rose-600' : 'text-slate-800'}">${ev.hasSub4 ? rec.gradeSub4 + '判定' : '未実施'}</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-50">
+                <span class="text-slate-500 block">第2次試験</span>
+                <span class="font-bold ${ev.stage2Pass === false ? 'text-rose-600' : 'text-slate-800'}">${ev.hasStage2 ? rec.gradeStage2 + '判定' : '未実施'}</span>
+              </div>
+            </div>
+
+            ${geminiPreview}
+          </div>
+        `;
+      }).join('');
+
+      container.querySelectorAll('.view-detail-btn').forEach(btn => {
+        btn.addEventListener('click', () => openDetailModal(btn.getAttribute('data-view-id')));
+      });
+      container.querySelectorAll('.edit-record-btn').forEach(btn => {
+        btn.addEventListener('click', () => startEditRecord(btn.getAttribute('data-edit-id')));
+      });
+      container.querySelectorAll('.delete-record-btn').forEach(btn => {
+        btn.addEventListener('click', () => promptDeleteRecord(btn.getAttribute('data-delete-id')));
+      });
+    }
+
+    function promptDeleteRecord(recordId) {
+      const target = records.find(r => String(r.id) === String(recordId));
+      if (!target) return;
+      openConfirmModal(
+        '記録の削除',
+        `「${target.examDate} / ${target.examYear}${target.attemptLabel ? ' (' + target.attemptLabel + ')' : ''}」の演習記録を削除してもよろしいですか？`,
+        () => {
+          records = records.filter(r => String(r.id) !== String(recordId));
+          if (String(editingStateId) === String(recordId)) {
+            resetRecordForm();
+          }
+          saveRecords();
+          document.getElementById('detailModal').classList.add('hidden');
+          renderDashboard();
+          renderHistoryList();
+          refreshBackupTextarea();
+          showToast('🗑️ 記録を削除しました');
+        }
+      );
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function openDetailModal(recordId) {
+      const rec = records.find(r => String(r.id) === String(recordId));
+      if (!rec) return;
+      currentModalRecordId = String(rec.id);
+      const ev = evaluateRecord(rec);
+
+      document.getElementById('modalTitle').textContent = `${rec.examYear} 過去問演習の詳細`;
+      document.getElementById('modalSubtitle').textContent = `実施日: ${rec.examDate} ${rec.attemptLabel ? '／ ' + rec.attemptLabel : ''}`;
+
+      const sub2Badges = ev.selectedSub2.map(s => {
+        const isLow = s.score < 20;
+        return `<span class="px-2.5 py-1 rounded-lg text-xs font-bold border ${isLow ? 'bg-rose-50 border-rose-200 text-rose-700' : 'bg-slate-50 border-slate-200 text-slate-800'}">
+          ${s.label}: ${s.score}/50点 (${Math.round((s.score / 50) * 100)}%)
+        </span>`;
+      }).join('');
+
+      document.getElementById('modalBody').innerHTML = `
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-slate-500 uppercase">科目Ⅱ 選択教科の内訳</h4>
+          <div class="flex flex-wrap gap-2">
+            ${sub2Badges || '<span class="text-xs text-slate-400">科目Ⅱの入力なし</span>'}
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-slate-700">📝 自分の論述解答・演習メモ</h4>
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 whitespace-pre-wrap leading-relaxed">${escapeHtml(rec.userEssayText || '（記録なし）')}</div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-purple-800">🤖 Geminiからの返答・採点講評</h4>
+          <div class="p-4 rounded-xl bg-purple-50/60 border border-purple-200 text-xs sm:text-sm text-slate-900 whitespace-pre-wrap leading-relaxed">${escapeHtml(rec.geminiFeedbackText || '（Geminiからの講評はまだ貼り付けられていません。「編集・追記する」からいつでも追加できます）')}</div>
+        </div>
+
+        ${(Array.isArray(rec.essayImages) && rec.essayImages.length > 0) ? `
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-slate-700">📷 添付した答案・問題写真</h4>
+          <div class="flex flex-wrap gap-3">
+            ${rec.essayImages.map(src => `<img src="${src}" alt="添付写真" data-lightbox-src="${src}" class="rounded-xl border border-slate-200 cursor-pointer" style="max-height:220px; max-width:100%; object-fit:contain;" />`).join('')}
+          </div>
+        </div>` : ''}
+      `;
+
+      document.getElementById('detailModal').classList.remove('hidden');
+    }
+
+    function startEditRecord(recordId) {
+      const rec = records.find(r => String(r.id) === String(recordId));
+      if (!rec) return;
+
+      document.getElementById('detailModal').classList.add('hidden');
+      switchTab('record');
+
+      editingStateId = String(rec.id);
+      document.getElementById('editingRecordId').value = String(rec.id);
+      document.getElementById('formTitle').textContent = `演習記録を編集（${rec.examDate} / ${rec.examYear}）`;
+      document.getElementById('editingModeBadge').classList.remove('hidden');
+      document.getElementById('cancelEditBtn').classList.remove('hidden');
+      document.getElementById('submitFormBtn').textContent = '💾 編集内容を上書き保存する';
+
+      document.getElementById('examDate').value = rec.examDate || '';
+      document.getElementById('examYear').value = rec.examYear || '令和7年度 (2025)';
+      document.getElementById('attemptLabel').value = rec.attemptLabel || '';
+      document.getElementById('scoreSub1').value = rec.scoreSub1 !== null && rec.scoreSub1 !== undefined ? rec.scoreSub1 : '';
+
+      SUBJECT_II_LIST.forEach(s => {
+        const val = rec.sub2Scores && rec.sub2Scores[s.key] !== null && rec.sub2Scores[s.key] !== undefined ? rec.sub2Scores[s.key] : '';
+        document.getElementById(`sub2-${s.key}`).value = val;
+      });
+
+      document.getElementById('sub3Subject').value = rec.sub3Subject || '';
+      document.getElementById('scoreSub3').value = rec.scoreSub3 !== null && rec.scoreSub3 !== undefined ? rec.scoreSub3 : '';
+      document.getElementById('gradeSub4').value = rec.gradeSub4 || '';
+      document.getElementById('scoreSub4').value = rec.scoreSub4 !== null && rec.scoreSub4 !== undefined ? rec.scoreSub4 : '';
+      document.getElementById('gradeStage2').value = rec.gradeStage2 || '';
+      document.getElementById('scoreStage2').value = rec.scoreStage2 !== null && rec.scoreStage2 !== undefined ? rec.scoreStage2 : '';
+      document.getElementById('userEssayText').value = rec.userEssayText || '';
+      document.getElementById('geminiFeedbackText').value = rec.geminiFeedbackText || '';
+      currentFormImages = Array.isArray(rec.essayImages) ? rec.essayImages.slice() : [];
+      renderEssayImagePreviews();
+
+      updateLiveFormEvaluation();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function clearFormInputsOnly() {
+      const today = new Date().toISOString().slice(0, 10);
+      document.getElementById('examDate').value = today;
+      document.getElementById('attemptLabel').value = '';
+      document.getElementById('scoreSub1').value = '';
+      SUBJECT_II_LIST.forEach(s => {
+        document.getElementById(`sub2-${s.key}`).value = '';
+      });
+      document.getElementById('sub3Subject').value = '';
+      document.getElementById('scoreSub3').value = '';
+      document.getElementById('gradeSub4').value = '';
+      document.getElementById('scoreSub4').value = '';
+      document.getElementById('gradeStage2').value = '';
+      document.getElementById('scoreStage2').value = '';
+      document.getElementById('userEssayText').value = '';
+      document.getElementById('geminiFeedbackText').value = '';
+      currentFormImages = [];
+      renderEssayImagePreviews();
+      updateLiveFormEvaluation();
+    }
+
+    function resetRecordForm() {
+      editingStateId = null;
+      document.getElementById('editingRecordId').value = '';
+      document.getElementById('formTitle').textContent = '新規の過去問演習を記録';
+      document.getElementById('editingModeBadge').classList.add('hidden');
+      document.getElementById('cancelEditBtn').classList.add('hidden');
+      document.getElementById('submitFormBtn').textContent = '💾 この演習結果を保存する';
+
+      clearFormInputsOnly();
+    }
+
+    function refreshBackupTextarea() {
+      const ta = document.getElementById('backupJsonTextarea');
+      if (ta) {
+        ta.value = JSON.stringify(records, null, 2);
+      }
+    }
+
+    function switchTab(tabName) {
+      const views = ['dashboard', 'record', 'history', 'data'];
+      views.forEach(v => {
+        const section = document.getElementById(`view-${v}`);
+        const btn = document.getElementById(`tabBtn-${v}`);
+        if (v === tabName) {
+          section.classList.remove('hidden');
+          btn.className = 'px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-indigo-600 shadow-sm';
+        } else {
+          section.classList.add('hidden');
+          btn.className = 'px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900';
+        }
+      });
+
+      if (tabName === 'dashboard') {
+        renderDashboard();
+      } else if (tabName === 'history') {
+        renderHistoryList();
+      } else if (tabName === 'data') {
+        refreshBackupTextarea();
+      }
+    }
+
+    function openConfirmModal(title, message, onConfirm) {
+      document.getElementById('confirmTitle').textContent = title;
+      document.getElementById('confirmMessage').textContent = message;
+      pendingConfirmAction = onConfirm;
+      document.getElementById('confirmModal').classList.remove('hidden');
+    }
+
+    function copyTextToClipboard(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('📋 Gemini採点依頼用プロンプトをコピーしました！');
+        }).catch(() => fallbackCopy(text));
+      } else {
+        fallbackCopy(text);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('📋 Gemini採点依頼用プロンプトをコピーしました！');
+      } catch (e) {
+        showToast('コピーに失敗しました');
+      }
+      document.body.removeChild(ta);
+    }
+
+    // Event Listeners Initialization
+    window.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      document.getElementById('toggleThemeBtn').addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        applyTheme(isDark ? 'light' : 'dark');
+      });
+      document.getElementById('backToPortalBtn').addEventListener('click', () => {
+        window.location.href = './index.html';
+      });
+
+      // Detail modal backdrop & image lightbox
+      document.getElementById('detailModal').addEventListener('click', (e) => {
+        if (e.target.id === 'detailModal') {
+          document.getElementById('detailModal').classList.add('hidden');
+        }
+        const imgEl = e.target.closest('[data-lightbox-src]');
+        if (imgEl) {
+          document.getElementById('lightboxPreviewImg').src = imgEl.getAttribute('data-lightbox-src');
+          document.getElementById('imageLightboxModal').classList.remove('hidden');
+        }
+      });
+      document.getElementById('closeLightboxModalBtn').addEventListener('click', () => {
+        document.getElementById('imageLightboxModal').classList.add('hidden');
+      });
+      document.getElementById('imageLightboxModal').addEventListener('click', (e) => {
+        if (e.target.id === 'imageLightboxModal') {
+          document.getElementById('imageLightboxModal').classList.add('hidden');
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.getElementById('detailModal').classList.add('hidden');
+          document.getElementById('confirmModal').classList.add('hidden');
+          document.getElementById('imageLightboxModal').classList.add('hidden');
+        }
+      });
+
+      // Export Baked HTML for GitHub Pages
+      document.getElementById('exportBakedHtmlBtn').addEventListener('click', () => {
+        const rawHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+        const sMarker = '/* __KAKOMON_DEFAULTS_START__ */';
+        const eMarker = '/* __KAKOMON_DEFAULTS_END__ */';
+        const sIdx = rawHtml.indexOf(sMarker);
+        const eIdx = rawHtml.indexOf(eMarker);
+        if (sIdx === -1 || eIdx === -1) {
+          showToast('⚠️ テンプレート領域が見つかりません');
+          return;
+        }
+        const replacement = sMarker + '\n    const DEFAULT_RECORDS = ' + JSON.stringify(records, null, 2) + ';\n    ' + eMarker;
+        const finalHtml = rawHtml.slice(0, sIdx) + replacement + rawHtml.slice(eIdx + eMarker.length);
+        const blob = new Blob([finalHtml], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'kakomon.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1500);
+        showToast('🌐 データ組込済みの kakomon.html を保存しました');
+      });
+
+      renderSub2Inputs();
+      loadRecords();
+      resetRecordForm();
+      renderDashboard();
+      renderHistoryList();
+
+      // Tabs
+      ['dashboard', 'record', 'history', 'data'].forEach(t => {
+        document.getElementById(`tabBtn-${t}`).addEventListener('click', () => switchTab(t));
+      });
+
+      document.getElementById('goToRecordBtn').addEventListener('click', () => {
+        resetRecordForm();
+        switchTab('record');
+      });
+
+      // Live form evaluation inputs
+      ['scoreSub1', 'scoreSub3', 'gradeSub4', 'scoreSub4', 'gradeStage2', 'scoreStage2'].forEach(id => {
+        document.getElementById(id).addEventListener('input', updateLiveFormEvaluation);
+        document.getElementById(id).addEventListener('change', updateLiveFormEvaluation);
+      });
+
+      // Copy Gemini Grading Prompt
+      document.getElementById('copyPromptBtn').addEventListener('click', () => {
+        const year = document.getElementById('examYear').value;
+        const sub3 = document.getElementById('sub3Subject').value || '選択教科';
+        const userAns = document.getElementById('userEssayText').value.trim() || '（ここに自分の解答を貼り付け）';
+        const promptText = `小学校教員資格認定試験（${year}）の過去問演習を自己採点しています。
+独立行政法人教職員支援機構（NITS）の合格判定基準および小学校学習指導要領に基づき、以下の私の論述答案・課題を厳密に採点・講評してください。
+
+【出力してほしい項目】
+1. 科目（Ⅲ）（${sub3}・論述式）：100点満点換算での推定得点（60点以上が合格）と採点根拠
+2. 科目（Ⅳ）（教職論述）：A（合格圏）・B（不合格）の2段階評価と判定理由
+3. 第2次試験課題（該当する場合）：A・Bの2段階評価
+4. 良かった点と、合格ライン（A評価・6割以上）を確実にするための具体的な改善アドバイス・模範解答例
+
+【私の解答】
+${userAns}`;
+        copyTextToClipboard(promptText);
+      });
+
+      // Form Submit
+      document.getElementById('recordForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const newRec = getFormRecordData();
+        const ev = evaluateRecord(newRec);
+        if (!ev.hasAny && !newRec.userEssayText && !newRec.geminiFeedbackText) {
+          showToast('⚠️ 少なくとも1つの科目の点数またはメモを入力してください');
+          return;
+        }
+
+        const existingIdx = records.findIndex(r => String(r.id) === String(newRec.id));
+        if (existingIdx >= 0) {
+          records[existingIdx] = newRec;
+          showToast('✅ 既存の演習記録を上書き更新しました！');
+        } else {
+          records.push(newRec);
+          showToast('✅ 新しい演習記録を保存しました！');
+        }
+
+        saveRecords();
+        resetRecordForm();
+        renderDashboard();
+        renderHistoryList();
+        switchTab('history');
+      });
+
+      document.getElementById('resetFormBtn').addEventListener('click', () => {
+        // 編集中に「入力をクリア」を押しても編集対象IDは維持し、新規登録に化けないようにする
+        clearFormInputsOnly();
+        showToast('入力欄をクリアしました');
+      });
+      document.getElementById('cancelEditBtn').addEventListener('click', () => {
+        resetRecordForm();
+        switchTab('history');
+      });
+
+      // Filters
+      document.getElementById('chartFilterYear').addEventListener('change', renderDashboard);
+      document.getElementById('historyFilterYear').addEventListener('change', renderHistoryList);
+      document.getElementById('historyFilterType').addEventListener('change', renderHistoryList);
+
+      // Detail Modal Buttons
+      document.getElementById('closeModalBtn').addEventListener('click', () => {
+        document.getElementById('detailModal').classList.add('hidden');
+      });
+      document.getElementById('modalCloseFooterBtn').addEventListener('click', () => {
+        document.getElementById('detailModal').classList.add('hidden');
+      });
+      document.getElementById('modalEditBtn').addEventListener('click', () => {
+        if (currentModalRecordId) startEditRecord(currentModalRecordId);
+      });
+      document.getElementById('modalDeleteBtn').addEventListener('click', () => {
+        if (currentModalRecordId) promptDeleteRecord(currentModalRecordId);
+      });
+
+      // Confirm Modal Buttons (実行・キャンセル・背景タップで確実に閉じるよう修正)
+      document.getElementById('confirmCancelBtn').addEventListener('click', () => {
+        document.getElementById('confirmModal').classList.add('hidden');
+        pendingConfirmAction = null;
+      });
+      document.getElementById('confirmOkBtn').addEventListener('click', () => {
+        document.getElementById('confirmModal').classList.add('hidden');
+        const action = pendingConfirmAction;
+        pendingConfirmAction = null;
+        if (typeof action === 'function') {
+          action();
+        }
+      });
+      document.getElementById('confirmModal').addEventListener('click', (e) => {
+        if (e.target.id === 'confirmModal') {
+          document.getElementById('confirmModal').classList.add('hidden');
+          pendingConfirmAction = null;
+        }
+      });
+
+      // Copy Backup JSON to Clipboard (Works reliably inside sandboxed preview / iPad)
+      document.getElementById('copyBackupTextBtn').addEventListener('click', () => {
+        const dataStr = JSON.stringify(records, null, 2);
+        refreshBackupTextarea();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(dataStr).then(() => {
+            showToast('📋 バックアップ文字列をコピーしました！メモ帳等に貼り付けて保存できます');
+          }).catch(() => {
+            fallbackCopyBackup(dataStr);
+          });
+        } else {
+          fallbackCopyBackup(dataStr);
+        }
+      });
+
+      function fallbackCopyBackup(text) {
+        const ta = document.getElementById('backupJsonTextarea');
+        ta.value = text;
+        ta.focus();
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast('📋 バックアップ文字列をコピーしました！メモ帳等に貼り付けて保存できます');
+        } catch (e) {
+          showToast('下のテキストボックスから全選択してコピーしてください');
+        }
+      }
+
+      // Restore from Backup Textarea
+      document.getElementById('restoreFromTextBtn').addEventListener('click', () => {
+        const rawText = document.getElementById('backupJsonTextarea').value.trim();
+        if (!rawText) {
+          showToast('⚠️ 復元するJSONテキストをテキストボックスに貼り付けてください');
+          return;
+        }
+        try {
+          const imported = JSON.parse(rawText);
+          if (Array.isArray(imported)) {
+            records = imported;
+            saveRecords();
+            renderDashboard();
+            renderHistoryList();
+            showToast(`✅ テキストから ${imported.length}件 の記録を復元しました！`);
+            switchTab('dashboard');
+          } else {
+            showToast('⚠️ データ形式が正しくありません（配列形式のJSONが必要です）');
+          }
+        } catch (err) {
+          showToast('⚠️ JSONの解析に失敗しました。貼り付けた文字列を確認してください');
+        }
+      });
+
+      // Image upload listener (Canvas auto-resize 800px & JPEG 0.8 compression)
+      document.getElementById('essayImageInput').addEventListener('change', (e) => {
+        const files = e.target.files;
+        if (!files || files.length === 0) return;
+        const remaining = 3 - currentFormImages.length;
+        if (remaining <= 0) {
+          showToast('⚠️ 写真は1回の記録につき最大3枚までです');
+          e.target.value = '';
+          return;
+        }
+        const slice = Array.prototype.slice.call(files, 0, remaining);
+        Promise.all(slice.map(f => compressImageFile(f))).then((urls) => {
+          urls.forEach(u => currentFormImages.push(u));
+          renderEssayImagePreviews();
+          showToast('📷 写真を自動縮小・圧縮して添付しました');
+        }).catch(() => {
+          showToast('⚠️ 写真の圧縮処理に失敗しました');
+        });
+        e.target.value = '';
+      });
+
+      // Hybrid Export JSON: file:// uses iOS Share Sheet first; https:// (GitHub Pages) uses direct download first
+      document.getElementById('exportJsonBtn').addEventListener('click', async () => {
+        const dataStr = JSON.stringify(records, null, 2);
+        refreshBackupTextarea();
+        const fileName = `小学校教員資格認定試験_過去問記録_${new Date().toISOString().slice(0, 10)}.json`;
+        const isLocalFile = (window.location.protocol === 'file:');
+
+        const triggerDownload = () => {
+          const blob = new Blob([dataStr], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = fileName;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setTimeout(() => URL.revokeObjectURL(url), 1500);
+          showToast('📦 バックアップファイル(.json)をダウンロードしました');
+        };
+
+        if (isLocalFile && typeof File === 'function' && navigator.canShare) {
+          try {
+            const file = new File([dataStr], fileName, { type: 'application/json' });
+            if (navigator.canShare({ files: [file] })) {
+              await navigator.share({
+                files: [file],
+                title: '過去問演習バックアップ',
+                text: '小学校教員資格認定試験 過去問演習トラッカーのバックアップデータ'
+              });
+              showToast('📦 共有シートからバックアップを出力しました');
+              return;
+            }
+          } catch (shareErr) {
+            if (shareErr && shareErr.name === 'AbortError') return;
+          }
+        }
+
+        try {
+          triggerDownload();
+        } catch (err) {
+          if (typeof File === 'function' && navigator.canShare) {
+            try {
+              const file = new File([dataStr], fileName, { type: 'application/json' });
+              if (navigator.canShare({ files: [file] })) {
+                await navigator.share({ files: [file], title: '過去問演習バックアップ' });
+                return;
+              }
+            } catch (e2) {}
+          }
+          showToast('⚠️ この環境ではファイルダウンロードが制限されています。「文字列をコピー」をご利用ください');
+        }
+      });
+
+      // Import JSON
+      document.getElementById('importJsonInput').addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          try {
+            const imported = JSON.parse(ev.target.result);
+            if (Array.isArray(imported)) {
+              records = imported;
+              saveRecords();
+              renderDashboard();
+              renderHistoryList();
+              showToast(`✅ ${imported.length}件の記録を復元しました！`);
+            } else {
+              showToast('⚠️ ファイル形式が正しくありません');
+            }
+          } catch (err) {
+            showToast('⚠️ JSONファイルの読み込みに失敗しました');
+          }
+        };
+        reader.readAsText(file);
+        e.target.value = '';
+      });
+
+      // Load Sample Data
+      document.getElementById('loadSampleBtn').addEventListener('click', () => {
+        openConfirmModal('サンプルデータの読み込み', '現在のデータにサンプル演習データ（3回分・Gemini講評付き）を上書きして読み込みますか？', () => {
+          records = JSON.parse(JSON.stringify(SAMPLE_RECORDS));
+          saveRecords();
+          renderDashboard();
+          renderHistoryList();
+          showToast('✨ サンプル演習データを読み込みました');
+          switchTab('dashboard');
+        });
+      });
+
+      // Clear All Data
+      document.getElementById('clearAllDataBtn').addEventListener('click', () => {
+        openConfirmModal('全データの削除', '保存されているすべての演習記録を削除します。よろしいですか？', () => {
+          records = [];
+          saveRecords();
+          renderDashboard();
+          renderHistoryList();
+          showToast('🗑️ すべてのデータを削除しました');
+          switchTab('dashboard');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
